@@ -1,0 +1,248 @@
+\begin{thebibliography}{52}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{{#1}}
+\providecommand{\urlprefix}{URL }
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{DOI~\discretionary{}{}{}#1}\else
+  \providecommand{\doi}{DOI~\discretionary{}{}{}\begingroup
+  \urlstyle{rm}\Url}\fi
+\providecommand{\eprint}[2][]{\url{#2}}
+
+\bibitem[{Afzal et~al(2009)Afzal, Torkar, and Feldt}]{Afzal2009a}
+Afzal W, Torkar R, Feldt R (2009) {A systematic review of search-based testing
+  for non-functional system properties}. Elsevier B.V., vol~51, pp 957--976,
+  \doi{10.1016/j.infsof.2008.12.005}
+
+\bibitem[{Alander et~al(1998)Alander, Mantere, and Turunen}]{Alander}
+Alander JTJ, Mantere T, Turunen P (1998) {Genetic Algorithm Based Software
+  Testing}. In: Neural Nets and Genetic Algorithms
+
+\bibitem[{Alba and Chicano(2008)}]{Alba2008}
+Alba E, Chicano F (2008) {Observations in using parallel and sequential
+  evolutionary algorithms for automatic software testing}. vol~35, pp
+  3161--3183, \doi{10.1016/j.cor.2007.01.016}
+
+\bibitem[{Alesio et~al(2015)Alesio, Briand, Nejati, and Gotlieb}]{Alesio2015}
+Alesio SDI, Briand LC, Nejati S, Gotlieb A (2015) {Combining Genetic Algorithms
+  and Constraint Programming}. vol~25
+
+\bibitem[{Baars et~al(2011)Baars, Lakhotia, Vos, and Wegener}]{Baars2011}
+Baars AI, Lakhotia K, Vos TEJ, Wegener J (2011) {Search-based testing, the
+  underlying engine of Future Internet testing}. pp 917--923,
+  \urlprefix\url{http://ieeexplore.ieee.org/stamp/stamp.jsp?tp={\&}arnumber=6078178}
+
+\bibitem[{Babbar et~al(2011)Babbar, Bajpai, and Sarmah}]{Babbar2011}
+Babbar C, Bajpai N, Sarmah D (2011) {Web Application Performance Analysis based
+  on Component Load Testing}
+
+\bibitem[{Blum(2012)}]{Blum2012}
+Blum C (2012) {Hybrid metaheuristics in combinatorial optimization: A
+  tutorial}. Elsevier B.V., vol 7505 LNCS, pp 1--10,
+  \doi{10.1007/978-3-642-33860-1\_1}
+
+\bibitem[{Blum and Roli(2003)}]{Blum2003}
+Blum C, Roli A (2003) {Metaheuristics in combinatorial optimization: overview
+  and conceptual comparison}. vol~35, pp 189--213,
+  \doi{10.1007/s10479-005-3971-7}
+
+\bibitem[{Briand et~al(2005)Briand, Labiche, and Shousha}]{Briand2005}
+Briand LC, Labiche Y, Shousha M (2005) {Stress testing real-time systems with
+  genetic algorithms}. p 1021, \doi{10.1145/1068009.1068183}
+
+\bibitem[{Canfora et~al(2005)Canfora, Penta, Esposito, and Villani}]{Canfora}
+Canfora G, Penta MD, Esposito R, Villani ML (2005) {An approach for QoS-aware
+  service composition based on genetic algorithms}
+
+\bibitem[{{Di Alesio} et~al(2013){Di Alesio}, Nejati, Briand, and
+  Gotlieb}]{DiAlesio2013}
+{Di Alesio} S, Nejati S, Briand L, Gotlieb A (2013) {Stress testing of task
+  deadlines: A constraint programming approach}. pp 158--167,
+  \doi{10.1109/ISSRE.2013.6698915}
+
+\bibitem[{Di~Alesio et~al(2014)Di~Alesio, Nejati, Briand, and
+  Gotlieb}]{DiAlesio2014}
+Di~Alesio S, Nejati S, Briand L, Gotlieb A (2014) {Worst-Case Scheduling of
+  Software Tasks -- A Constraint Optimization Model to Support Performance
+  Testing}. pp 813--830
+
+\bibitem[{Draheim et~al(2006)Draheim, Grundy, Hosking, Lutteroth, and
+  Weber}]{Draheim2006b}
+Draheim D, Grundy J, Hosking J, Lutteroth C, Weber G (2006) {Realistic load
+  testing of Web applications}. In: Conference on Software Maintenance and
+  Reengineering (CSMR'06), \doi{10.1109/CSMR.2006.43}
+
+\bibitem[{Garousi(2006)}]{Garousi2006}
+Garousi V (2006) {Traffic-aware Stress Testing of Distributed Real-Time Systems
+  based on UML Models using Genetic Algorithms}. August
+
+\bibitem[{Garousi(2008)}]{Garousi2008}
+Garousi V (2008) {Empirical analysis of a genetic algorithm-based stress test
+  technique}. p 1743, \doi{10.1145/1389095.1389433}
+
+\bibitem[{Garousi(2010)}]{Garousi2010}
+Garousi V (2010) {A Genetic Algorithm-Based Stress Test Requirements Generator
+  Tool and Its Empirical Evaluation}. vol~36, pp 778--797,
+  \doi{10.1109/TSE.2010.5}
+
+\bibitem[{Glover and Mart{\'{i}}(1986)}]{Glover1986}
+Glover F, Mart{\'{i}} R (1986) {Tabu Search}. pp 1--16
+
+\bibitem[{Gois et~al(2016)Gois, Porfirio, Coelho, and Barbosa}]{Gois2016}
+Gois N, Porfirio P, Coelho A, Barbosa T (2016) {Improving Stress Search Based
+  Testing using a Hybrid Metaheuristic Approach}. In: Proceedings of the 2016
+  Latin American Computing Conference (CLEI), pp 718--728
+
+\bibitem[{Grechanik et~al(2012)Grechanik, Fu, and Xie}]{Grechanik2012}
+Grechanik M, Fu C, Xie Q (2012) {Automatically finding performance problems
+  with feedback-directed learning software testing}. Ieee, pp 156--166,
+  \doi{10.1109/ICSE.2012.6227197}
+
+\bibitem[{Greenwald et~al(2003)Greenwald, Hall, and Serrano}]{Greenwald2003}
+Greenwald A, Hall K, Serrano R (2003) {Correlated Q-learning}. 3, pp 84--89,
+  \urlprefix\url{http://www.aaai.org/Papers/Symposia/Spring/2002/SS-02-02/SS02-02-012.pdf}
+
+\bibitem[{Gross et~al(2000)Gross, Jones, and Eyres}]{Gross2000}
+Gross H, Jones BF, Eyres DE (2000) {Structural performance measure of
+  evolutionary testing applied to worst-case timing of real-time systems}. vol
+  147, pp 25--30, \doi{10.1049/ip-sen}
+
+\bibitem[{Harman and McMinn(2010)}]{Harman2010}
+Harman M, McMinn P (2010) {A theoretical and empirical study of search-based
+  testing: Local, global, and hybrid search}. vol~36, pp 226--247,
+  \doi{10.1109/TSE.2009.71}
+
+\bibitem[{Hong et~al(2000)Hong, Wang, and Chen}]{hong2000simultaneously}
+Hong TP, Wang HS, Chen WC (2000) Simultaneously applying multiple mutation
+  operators in genetic algorithms. Springer, vol~6, pp 439--455
+
+\bibitem[{{J. Wegener, K. Grimm, M. Grochtmann, H.
+  Sthamer}(1996)}]{J.WegenerK.GrimmM.GrochtmannH.Sthamer1996}
+{J Wegener, K Grimm, M Grochtmann, H Sthamer} BJ (1996) {Systematic testing of
+  real-time systems}
+
+\bibitem[{Jaziri(2008)}]{Jaziri2008}
+Jaziri W (2008) {Local Search Techniques: Focus on Tabu Search}
+
+\bibitem[{Jiang(2010)}]{Jiang2010}
+Jiang Z (2010) {Automated analysis of load testing results}. PhD thesis,
+  \urlprefix\url{http://dl.acm.org/citation.cfm?id=1831726}
+
+\bibitem[{Lewis et~al(2005)Lewis, Dobbs, and Veerapillai}]{Lewis2005}
+Lewis WE, Dobbs D, Veerapillai G (2005) {Software testing and continuous
+  quality improvement}.
+  \urlprefix\url{http://books.google.com/books?id=fgaBDd0TfT8C{\&}pgis=1}
+
+\bibitem[{McMinn et~al(2004)McMinn, Court, Testing, and Street}]{McMinn2004}
+McMinn P, Court R, Testing S, Street P (2004) {Search-based software test data
+  generation: a survey}. vol~14, pp 1--58, \doi{10.1002/stvr.294}
+
+\bibitem[{Molyneaux(2009)}]{Molyneaux2009}
+Molyneaux I (2009) {The Art of Application Performance Testing: Help for
+  Programmers and Quality Assurance}, 1st edn. "O'Reilly Media, Inc."
+
+\bibitem[{Mueller and Wegener(1998)}]{Mueller1998}
+Mueller F, Wegener J (1998) {A comparison of static analysis and evolutionary
+  testing for the verification of timing constraints}.
+  \doi{10.1109/RTTAS.1998.683198}
+
+\bibitem[{Penta et~al(2007)Penta, Canfora, and Esposito}]{Penta2007}
+Penta MD, Canfora G, Esposito G (2007) {Search-based testing of service level
+  agreements}. In: Proceedings of the 9th annual conference on Genetic and
+  evolutionary computation, pp 1090--1097
+
+\bibitem[{Pohlheim et~al(2005)Pohlheim, Conrad, and Griep}]{Pohlheim2005}
+Pohlheim H, Conrad M, Griep A (2005) {Evolutionary Safety Testing of Embedded
+  Control Software by Automatically Generating Compact Test Data Sequences}.
+  724, pp 804----814, \doi{10.4271/2005-01-0750}
+
+\bibitem[{Puchinger and Raidl(2005)}]{Puchinger2005}
+Puchinger J, Raidl R (2005) {Combining Metaheuristics and Exact Algorithms in
+  Combinatorial Optimization : A Survey and Classification}. vol 3562, pp
+  41--53, \doi{10.1007/11499305\_5}
+
+\bibitem[{Puschner and Nossal(1998)}]{Puschner1998}
+Puschner P, Nossal R (1998) {Testing the results of static worst-case
+  execution-time analysis}. \doi{10.1109/REAL.1998.739738}
+
+\bibitem[{Raidl et~al(2010)Raidl, Puchinger, and Blum}]{raidl2010metaheuristic}
+Raidl GR, Puchinger J, Blum C (2010) Metaheuristic hybrids. In: Handbook of
+  metaheuristics, Springer, pp 469--496
+
+\bibitem[{Raidl(2006)}]{Raidl2006}
+Raidl R (2006) {A Unified View on Hybrid Metaheuristics}. pp 1--12
+
+\bibitem[{{Raidl, Gunther R and Puchinger, Jakob and
+  Blum}(2013)}]{Tobergte2013}
+{Raidl, Gunther R and Puchinger, Jakob and Blum} C (2013) {Hybrid
+  Metaheuristics An Emerging Approach}, vol~53.
+  \doi{10.1017/CBO9781107415324.004}, \eprint{arXiv:1011.1669v3}
+
+\bibitem[{Shousha(2003)}]{shousha2003performance}
+Shousha M (2003) Performance stress testing of real-time systems using genetic
+  algorithms. PhD thesis, Carleton University Ottawa
+
+\bibitem[{Smith and Williams(2002)}]{Smith2002}
+Smith C, Williams L (2002) {Software Performance AntiPatterns; Common
+  Performance Problems and their Solutions}. vol~2, pp 797--806,
+  \urlprefix\url{http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.100.6968{\&}rep=rep1{\&}type=pdf}
+
+\bibitem[{Smith and Williams(2003)}]{Smith2003}
+Smith CU, Williams LG (2003) {More New Software Performance AntiPatterns:
+  EvenMore Ways to Shoot Yourself in the Foot}. pp 717--725,
+  \urlprefix\url{http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.123.4517{\&}rep=rep1{\&}type=pdf}
+
+\bibitem[{Sullivan et~al(1998)Sullivan, V\"{o}ssner, Wegener, and
+  Ag}]{Sullivan}
+Sullivan MO, V\"{o}ssner S, Wegener J, Ag Db (1998) {Testing Temporal
+  Correctness of Real-Time Systems --- A New Approach Using Genetic Algorithms
+  and Cluster Analysis ---}. pp 1--20
+
+\bibitem[{Sutton and Barto(2012)}]{Sutton2012}
+Sutton RS, Barto AG (2012) Reinforcement learning. vol~3, p 322,
+  \doi{10.1109/MED.2013.6608833}, \eprint{1603.02199}
+
+\bibitem[{Szepesv{\'{a}}ri and Bartok(2010)}]{Szepesvari2010}
+Szepesv{\'{a}}ri C, Bartok G (2010) {Algorithms for Reinforcement Learning}.
+  vol~4, pp 1--103, \doi{10.2200/S00268ED1V01Y201005AIM009}
+
+\bibitem[{Talbi(2009)}]{talbi2009metaheuristics}
+Talbi EG (2009) Metaheuristics: from design to implementation, vol~74. John
+  Wiley \& Sons
+
+\bibitem[{Talbi(2012)}]{Talbi2012}
+Talbi EG (2012) {Hybrid Metaheuristics}, vol~2.
+  \doi{10.1007/978-3-642-30671-6}, \eprint{arXiv:1011.1669v3}
+
+\bibitem[{Talbi(2013)}]{Talbi2013}
+Talbi EG (2013) {Metaheuristics: From Design to Implementation}, vol~53.
+  \doi{10.1017/CBO9781107415324.004}, \eprint{arXiv:1011.1669v3}
+
+\bibitem[{Tracey(2000)}]{tracey2000search}
+Tracey NJ (2000) A search-based automated test-data generation framework for
+  safety-critical software. PhD thesis, Citeseer
+
+\bibitem[{Tracey et~al(1998)Tracey, Clark, and Mander}]{Tracey1998}
+Tracey NJ, Clark Ja, Mander KC (1998) {Automated Programme Flaw Finding using
+  Simulated Annealing}
+
+\bibitem[{Vetoio(2011)}]{Vetoio2011}
+Vetoio V (2011) {PhD Thesis in Computer Science Automated generation of
+  architectural feedback from software performance analysis results Catia
+  Trubiani}
+
+\bibitem[{Wegener and Grochtmann(1998)}]{Wegener1998}
+Wegener J, Grochtmann M (1998) {Verifying timing constraints of real-time
+  systems by means of evolutionary testing}. vol~15, pp 275--298, \doi{Doi
+  10.1023/A:1008096431840}
+
+\bibitem[{Wegener et~al(1997)Wegener, Sthamer, Jones, and Eyres}]{Wegener1997}
+Wegener J, Sthamer H, Jones BF, Eyres DE (1997) {Testing real-time systems
+  using genetic algorithms}. vol~6, pp 127--135, \doi{10.1023/A:1018551716639},
+  \urlprefix\url{http://www.springerlink.com/index/uh26067rt3516765.pdf}
+
+\bibitem[{{Wegener, Joachim and Pitschinetz, Roman and
+  Sthamer}(2000)}]{Stations}
+{Wegener, Joachim and Pitschinetz, Roman and Sthamer} H (2000) {Automated
+  Testing of Real-Time Tasks}
+
+\end{thebibliography}

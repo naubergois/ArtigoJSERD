@@ -1,0 +1,111 @@
+This is BibTeX, Version 0.99d (TeX Live 2015)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: bmc_article.aux
+The style file: ../spbasic.bst
+Database file #1: ../biblio.bib
+Repeated entry---line 646 of file ../biblio.bib
+ : @inproceedings{Gois2016
+ :                        ,
+I'm skipping whatever remains of this entry
+Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
+Warning--empty booktitle in Afzal2009a
+Warning--can't use both volume and number fields in Afzal2009a
+Warning--empty booktitle in Alba2008
+Warning--can't use both volume and number fields in Alba2008
+Warning--empty booktitle in Alesio2015
+Warning--can't use both volume and number fields in Alesio2015
+Warning--empty booktitle in Baars2011
+Warning--empty booktitle in Babbar2011
+Warning--empty booktitle in Blum2012
+Warning--can't use both volume and number fields in Blum2012
+Warning--empty booktitle in Blum2003
+Warning--can't use both volume and number fields in Blum2003
+Warning--empty booktitle in Briand2005
+Warning--empty booktitle in Canfora
+Warning--empty booktitle in DiAlesio2013
+Warning--empty booktitle in DiAlesio2014
+Warning--empty booktitle in Garousi2006
+Warning--empty booktitle in Garousi2008
+Warning--empty booktitle in Garousi2010
+Warning--can't use both volume and number fields in Garousi2010
+Warning--empty booktitle in Glover1986
+Warning--empty booktitle in Grechanik2012
+Warning--empty booktitle in Greenwald2003
+Warning--empty booktitle in Gross2000
+Warning--can't use both volume and number fields in Gross2000
+Warning--empty booktitle in Harman2010
+Warning--can't use both volume and number fields in Harman2010
+Warning--empty booktitle in hong2000simultaneously
+Warning--can't use both volume and number fields in hong2000simultaneously
+Warning--empty booktitle in J.WegenerK.GrimmM.GrochtmannH.Sthamer1996
+Warning--missing publisher in Jaziri2008
+Warning--missing school in Jiang2010
+Warning--missing publisher in Lewis2005
+Warning--empty booktitle in McMinn2004
+Warning--empty booktitle in Mueller1998
+Warning--empty booktitle in Pohlheim2005
+Warning--empty booktitle in Puchinger2005
+Warning--empty booktitle in Puschner1998
+Warning--empty booktitle in Raidl2006
+Warning--can't use both volume and number fields in Tobergte2013
+Warning--missing publisher in Tobergte2013
+Warning--empty booktitle in Smith2002
+Warning--empty booktitle in Smith2003
+Warning--empty booktitle in Sullivan
+Warning--empty booktitle in Sutton2012
+Warning--can't use both volume and number fields in Sutton2012
+Warning--empty booktitle in Szepesvari2010
+Warning--can't use both volume and number fields in Szepesvari2010
+Warning--can't use both volume and number fields in Talbi2012
+Warning--missing publisher in Talbi2012
+Warning--can't use both volume and number fields in Talbi2013
+Warning--missing publisher in Talbi2013
+Warning--empty booktitle in Tracey1998
+Warning--empty booktitle in Vetoio2011
+Warning--empty booktitle in Wegener1998
+Warning--can't use both volume and number fields in Wegener1998
+Warning--empty booktitle in Wegener1997
+Warning--can't use both volume and number fields in Wegener1997
+Warning--empty booktitle in Stations
+You've used 52 entries,
+            3270 wiz_defined-function locations,
+            1014 strings with 14949 characters,
+and the built_in function-call counts, 55729 in all, are:
+= -- 6008
+> -- 1178
+< -- 81
++ -- 560
+- -- 363
+* -- 3666
+:= -- 6398
+add.period$ -- 45
+call.type$ -- 52
+change.case$ -- 386
+chr.to.int$ -- 58
+cite$ -- 111
+duplicate$ -- 5604
+empty$ -- 4202
+format.name$ -- 509
+if$ -- 11708
+int.to.chr$ -- 1
+int.to.str$ -- 1
+missing$ -- 508
+newline$ -- 166
+num.names$ -- 208
+pop$ -- 1915
+preamble$ -- 1
+purify$ -- 329
+quote$ -- 0
+skip$ -- 2595
+stack$ -- 0
+substring$ -- 4334
+swap$ -- 3214
+text.length$ -- 50
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 447
+warning$ -- 59
+while$ -- 389
+width$ -- 0
+write$ -- 583
+(There was 1 error message)
