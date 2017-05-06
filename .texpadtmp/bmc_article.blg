@@ -10,16 +10,12 @@ I'm skipping whatever remains of this entry
 Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
 Warning--empty booktitle in Afzal2009a
 Warning--can't use both volume and number fields in Afzal2009a
-Warning--empty booktitle in Alba2008
-Warning--can't use both volume and number fields in Alba2008
 Warning--empty booktitle in Alesio2015
 Warning--can't use both volume and number fields in Alesio2015
 Warning--empty booktitle in Baars2011
 Warning--empty booktitle in Babbar2011
 Warning--empty booktitle in Blum2012
 Warning--can't use both volume and number fields in Blum2012
-Warning--empty booktitle in Blum2003
-Warning--can't use both volume and number fields in Blum2003
 Warning--empty booktitle in Briand2005
 Warning--empty booktitle in Canfora
 Warning--empty booktitle in DiAlesio2013
@@ -41,14 +37,11 @@ Warning--empty booktitle in J.WegenerK.GrimmM.GrochtmannH.Sthamer1996
 Warning--missing publisher in Jaziri2008
 Warning--missing school in Jiang2010
 Warning--missing publisher in Lewis2005
-Warning--empty booktitle in McMinn2004
 Warning--empty booktitle in Mueller1998
 Warning--empty booktitle in Pohlheim2005
 Warning--empty booktitle in Puchinger2005
 Warning--empty booktitle in Puschner1998
 Warning--empty booktitle in Raidl2006
-Warning--can't use both volume and number fields in Tobergte2013
-Warning--missing publisher in Tobergte2013
 Warning--empty booktitle in Smith2002
 Warning--empty booktitle in Smith2003
 Warning--empty booktitle in Sullivan
@@ -56,8 +49,6 @@ Warning--empty booktitle in Sutton2012
 Warning--can't use both volume and number fields in Sutton2012
 Warning--empty booktitle in Szepesvari2010
 Warning--can't use both volume and number fields in Szepesvari2010
-Warning--can't use both volume and number fields in Talbi2012
-Warning--missing publisher in Talbi2012
 Warning--can't use both volume and number fields in Talbi2013
 Warning--missing publisher in Talbi2013
 Warning--empty booktitle in Tracey1998
@@ -67,45 +58,45 @@ Warning--can't use both volume and number fields in Wegener1998
 Warning--empty booktitle in Wegener1997
 Warning--can't use both volume and number fields in Wegener1997
 Warning--empty booktitle in Stations
-You've used 52 entries,
+You've used 46 entries,
             3270 wiz_defined-function locations,
-            1014 strings with 14949 characters,
-and the built_in function-call counts, 55729 in all, are:
-= -- 6008
-> -- 1178
-< -- 81
-+ -- 560
-- -- 363
-* -- 3666
-:= -- 6398
-add.period$ -- 45
-call.type$ -- 52
-change.case$ -- 386
-chr.to.int$ -- 58
-cite$ -- 111
-duplicate$ -- 5604
-empty$ -- 4202
-format.name$ -- 509
-if$ -- 11708
+            975 strings with 14026 characters,
+and the built_in function-call counts, 49585 in all, are:
+= -- 5342
+> -- 1070
+< -- 67
++ -- 504
+- -- 330
+* -- 3260
+:= -- 5703
+add.period$ -- 39
+call.type$ -- 46
+change.case$ -- 348
+chr.to.int$ -- 52
+cite$ -- 96
+duplicate$ -- 4978
+empty$ -- 3738
+format.name$ -- 460
+if$ -- 10420
 int.to.chr$ -- 1
 int.to.str$ -- 1
-missing$ -- 508
-newline$ -- 166
-num.names$ -- 208
-pop$ -- 1915
+missing$ -- 446
+newline$ -- 148
+num.names$ -- 184
+pop$ -- 1717
 preamble$ -- 1
-purify$ -- 329
+purify$ -- 294
 quote$ -- 0
-skip$ -- 2595
+skip$ -- 2296
 stack$ -- 0
-substring$ -- 4334
-swap$ -- 3214
-text.length$ -- 50
+substring$ -- 3858
+swap$ -- 2833
+text.length$ -- 41
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 447
-warning$ -- 59
-while$ -- 389
+type$ -- 402
+warning$ -- 50
+while$ -- 348
 width$ -- 0
-write$ -- 583
+write$ -- 512
 (There was 1 error message)

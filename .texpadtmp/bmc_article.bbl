@@ -1,4 +1,4 @@
-\begin{thebibliography}{52}
+\begin{thebibliography}{46}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{{#1}}
 \providecommand{\urlprefix}{URL }
@@ -17,11 +17,6 @@ Afzal W, Torkar R, Feldt R (2009) {A systematic review of search-based testing
 Alander JTJ, Mantere T, Turunen P (1998) {Genetic Algorithm Based Software
   Testing}. In: Neural Nets and Genetic Algorithms
 
-\bibitem[{Alba and Chicano(2008)}]{Alba2008}
-Alba E, Chicano F (2008) {Observations in using parallel and sequential
-  evolutionary algorithms for automatic software testing}. vol~35, pp
-  3161--3183, \doi{10.1016/j.cor.2007.01.016}
-
 \bibitem[{Alesio et~al(2015)Alesio, Briand, Nejati, and Gotlieb}]{Alesio2015}
 Alesio SDI, Briand LC, Nejati S, Gotlieb A (2015) {Combining Genetic Algorithms
   and Constraint Programming}. vol~25
@@ -39,11 +34,6 @@ Babbar C, Bajpai N, Sarmah D (2011) {Web Application Performance Analysis based
 Blum C (2012) {Hybrid metaheuristics in combinatorial optimization: A
   tutorial}. Elsevier B.V., vol 7505 LNCS, pp 1--10,
   \doi{10.1007/978-3-642-33860-1\_1}
-
-\bibitem[{Blum and Roli(2003)}]{Blum2003}
-Blum C, Roli A (2003) {Metaheuristics in combinatorial optimization: overview
-  and conceptual comparison}. vol~35, pp 189--213,
-  \doi{10.1007/s10479-005-3971-7}
 
 \bibitem[{Briand et~al(2005)Briand, Labiche, and Shousha}]{Briand2005}
 Briand LC, Labiche Y, Shousha M (2005) {Stress testing real-time systems with
@@ -132,10 +122,6 @@ Lewis WE, Dobbs D, Veerapillai G (2005) {Software testing and continuous
   quality improvement}.
   \urlprefix\url{http://books.google.com/books?id=fgaBDd0TfT8C{\&}pgis=1}
 
-\bibitem[{McMinn et~al(2004)McMinn, Court, Testing, and Street}]{McMinn2004}
-McMinn P, Court R, Testing S, Street P (2004) {Search-based software test data
-  generation: a survey}. vol~14, pp 1--58, \doi{10.1002/stvr.294}
-
 \bibitem[{Molyneaux(2009)}]{Molyneaux2009}
 Molyneaux I (2009) {The Art of Application Performance Testing: Help for
   Programmers and Quality Assurance}, 1st edn. "O'Reilly Media, Inc."
@@ -171,12 +157,6 @@ Raidl GR, Puchinger J, Blum C (2010) Metaheuristic hybrids. In: Handbook of
 \bibitem[{Raidl(2006)}]{Raidl2006}
 Raidl R (2006) {A Unified View on Hybrid Metaheuristics}. pp 1--12
 
-\bibitem[{{Raidl, Gunther R and Puchinger, Jakob and
-  Blum}(2013)}]{Tobergte2013}
-{Raidl, Gunther R and Puchinger, Jakob and Blum} C (2013) {Hybrid
-  Metaheuristics An Emerging Approach}, vol~53.
-  \doi{10.1017/CBO9781107415324.004}, \eprint{arXiv:1011.1669v3}
-
 \bibitem[{Shousha(2003)}]{shousha2003performance}
 Shousha M (2003) Performance stress testing of real-time systems using genetic
   algorithms. PhD thesis, Carleton University Ottawa
@@ -204,14 +184,6 @@ Sutton RS, Barto AG (2012) Reinforcement learning. vol~3, p 322,
 \bibitem[{Szepesv{\'{a}}ri and Bartok(2010)}]{Szepesvari2010}
 Szepesv{\'{a}}ri C, Bartok G (2010) {Algorithms for Reinforcement Learning}.
   vol~4, pp 1--103, \doi{10.2200/S00268ED1V01Y201005AIM009}
-
-\bibitem[{Talbi(2009)}]{talbi2009metaheuristics}
-Talbi EG (2009) Metaheuristics: from design to implementation, vol~74. John
-  Wiley \& Sons
-
-\bibitem[{Talbi(2012)}]{Talbi2012}
-Talbi EG (2012) {Hybrid Metaheuristics}, vol~2.
-  \doi{10.1007/978-3-642-30671-6}, \eprint{arXiv:1011.1669v3}
 
 \bibitem[{Talbi(2013)}]{Talbi2013}
 Talbi EG (2013) {Metaheuristics: From Design to Implementation}, vol~53.
