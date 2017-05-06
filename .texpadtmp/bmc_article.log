@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.3.13)  5 MAY 2017 23:31
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.3.13)  6 MAY 2017 08:42
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1752,31 +1752,26 @@ Overfull \hbox (3.67117pt too wide) in paragraph at lines 407--407
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [4] [5] [6] [7]
-LaTeX Font Info:    Try loading font information for T1+txtt on input line 534.
+LaTeX Font Info:    Try loading font information for T1+txtt on input line 530.
 
  (/usr/local/texlive/2015/texmf-dist/tex/latex/txfonts/t1txtt.fd
 File: t1txtt.fd 2000/12/15 v3.1
 ) [8] [9]
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 567.
+               Default added (so using `tbp') on input line 563.
 
 [10] [11]
-Overfull \hbox (11.60785pt too wide) detected at line 727
+Overfull \hbox (11.60785pt too wide) detected at line 723
  $[] []$  
  []
 
 [12] [13]
 LaTeX Font Info:    Font shape `T1/txss/bx/n' will be
-(Font)              scaled to size 6.64998pt on input line 792.
+(Font)              scaled to size 6.64998pt on input line 788.
  (/Users/naubergois/Downloads/bmc_template/.texpadtmp/bmc_article.bbl
 [14])
-Overfull \hbox (12.5pt too wide) in paragraph at lines 866--866
-[] [] 
- []
-
-
-Overfull \hbox (12.5pt too wide) in paragraph at lines 873--873
+Overfull \hbox (12.5pt too wide) in paragraph at lines 862--862
 [] [] 
  []
 
@@ -1784,15 +1779,15 @@ Overfull \hbox (12.5pt too wide) in paragraph at lines 873--873
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 927--927
-[]\T1/txr/m/n/10 Figure 9: |So-lu-tion rep-re-sen-ta-tion and
+Underfull \hbox (badness 10000) in paragraph at lines 902--902
+[]\T1/txr/m/n/10 Figure 6: |So-lu-tion rep-re-sen-ta-tion and
  []
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-Overfull \hbox (12.5pt too wide) in paragraph at lines 941--941
+Overfull \hbox (12.5pt too wide) in paragraph at lines 916--916
 [] [] 
  []
 
@@ -1806,7 +1801,7 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-Overfull \hbox (12.5pt too wide) in paragraph at lines 980--980
+Overfull \hbox (12.5pt too wide) in paragraph at lines 955--955
 [] [] 
  []
 
@@ -1820,7 +1815,7 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
-Overfull \hbox (12.5pt too wide) in paragraph at lines 1020--1020
+Overfull \hbox (12.5pt too wide) in paragraph at lines 995--995
 [] [] 
  []
 
@@ -1831,7 +1826,7 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
-Overfull \hbox (12.5pt too wide) in paragraph at lines 1042--1042
+Overfull \hbox (12.5pt too wide) in paragraph at lines 1017--1017
 [] [] 
  []
 
@@ -1839,7 +1834,7 @@ Overfull \hbox (12.5pt too wide) in paragraph at lines 1042--1042
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
-Overfull \hbox (12.5pt too wide) in paragraph at lines 1048--1048
+Overfull \hbox (12.5pt too wide) in paragraph at lines 1023--1023
 [] [] 
  []
 
@@ -1847,13 +1842,13 @@ Overfull \hbox (12.5pt too wide) in paragraph at lines 1048--1048
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-Underfull \hbox (badness 2027) in paragraph at lines 1056--1056
-[]\T1/txr/m/n/10 Figure 26: |Re-sponse time of in-di-vid-u-als
+Underfull \hbox (badness 2027) in paragraph at lines 1031--1031
+[]\T1/txr/m/n/10 Figure 23: |Re-sponse time of in-di-vid-u-als
  []
 
 
-Underfull \hbox (badness 2027) in paragraph at lines 1062--1062
-[]\T1/txr/m/n/10 Figure 27: |Re-sponse time of in-di-vid-u-als
+Underfull \hbox (badness 2027) in paragraph at lines 1037--1037
+[]\T1/txr/m/n/10 Figure 24: |Re-sponse time of in-di-vid-u-als
  []
 
 
@@ -1874,10 +1869,10 @@ See the caption package documentation for explanation.
 
 (/Users/naubergois/Downloads/bmc_template/.texpadtmp/bmc_article.aux) ) 
 Here is how much of TeX's memory you used:
- 26947 strings out of 493089
- 496731 string characters out of 6134842
- 826561 words of memory out of 5000000
- 29794 multiletter control sequences out of 15000+600000
+ 26944 strings out of 493089
+ 496677 string characters out of 6134842
+ 825561 words of memory out of 5000000
+ 29791 multiletter control sequences out of 15000+600000
  98193 words of font info for 170 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  103i,20n,103p,10413b,480s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1896,7 +1891,7 @@ xlive/2015/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2015
 /texmf-dist/fonts/type1/urw/times/utmri8a.pfb></usr/local/texlive/2015/texmf-di
 st/fonts/type1/urw/zapfding/uzdr.pfb>
 Output written on /Users/naubergois/Downloads/bmc_template/.texpadtmp/bmc_artic
-le.pdf (17 pages, 139866 bytes).
+le.pdf (17 pages, 139423 bytes).
 PDF statistics:
  120 PDF objects out of 1000 (max. 8388607)
  82 compressed objects within 1 object stream

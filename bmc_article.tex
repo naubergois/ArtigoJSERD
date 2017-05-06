@@ -524,10 +524,6 @@ penalty=100 * \Delta \\
 \end{aligned}
 \end{equation}
 
-\subsection{Hybrid Metaheuristic with Q-Learning Approach}
-
-
-
 \subsection{IAdapter}
 
 IAdapter is a JMeter plugin designed to perform search-based stress tests.  The plugin is available at \url{www.github.com/naubergois/newiadapter}.  The IAdapter plugin implements the solution proposed in Section 5. The next subsections present details about the Apache JMeter tool, the IAdapter Life Cycle and the IAdapter Components. The IAdapter plugin provides three main components: WorkLoadThreadGroup, WorkLoadSaver, and WorkLoadController. Figure \ref{fig:iadapterarchitecture} shows the IAdapter architecture. All metaheuristic classes implement the interface IAlgorithm. Test scenarios  and test results are stored in a MySQL database. The GeneticAlgorithm class uses a framework named JGAP to implement Genetic Algorithms.
@@ -865,27 +861,6 @@ Not applicable
 \label{fig:dipenta}
 \end{figure}
 
-\begin{figure}[h]
-\centering
-\includegraphics{./images/neighborhood.png}
-\caption{ An example of neighborhood for a permutation \citep{Talbi2013}.}
-\label{fig:sperneighborhood}
-\end{figure}
-
-\begin{figure}[h]
-\begin{minipage}{.5\textwidth}
-\centering
-\includegraphics={./images/metaheuristc2.png}
-\caption{Categories of metaheuristc combinations \citep{Puchinger2005} }
-\label{fig:metaheuristc}
-\end{minipage}
-\begin{minipage}{.5\textwidth}
-\centering
-\includegraphics{./images/agentenv.png}
-\caption{Example of an interaction between some agent and the environment}
-\label{fig:agentenv}
-\end{minipage}
-\end{figure}
 
 \begin{figure}
 \begin{minipage}{.5\textwidth}
