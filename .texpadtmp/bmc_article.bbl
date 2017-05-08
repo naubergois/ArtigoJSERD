@@ -1,4 +1,4 @@
-\begin{thebibliography}{46}
+\begin{thebibliography}{40}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{{#1}}
 \providecommand{\urlprefix}{URL }
@@ -21,19 +21,9 @@ Alander JTJ, Mantere T, Turunen P (1998) {Genetic Algorithm Based Software
 Alesio SDI, Briand LC, Nejati S, Gotlieb A (2015) {Combining Genetic Algorithms
   and Constraint Programming}. vol~25
 
-\bibitem[{Baars et~al(2011)Baars, Lakhotia, Vos, and Wegener}]{Baars2011}
-Baars AI, Lakhotia K, Vos TEJ, Wegener J (2011) {Search-based testing, the
-  underlying engine of Future Internet testing}. pp 917--923,
-  \urlprefix\url{http://ieeexplore.ieee.org/stamp/stamp.jsp?tp={\&}arnumber=6078178}
-
 \bibitem[{Babbar et~al(2011)Babbar, Bajpai, and Sarmah}]{Babbar2011}
 Babbar C, Bajpai N, Sarmah D (2011) {Web Application Performance Analysis based
   on Component Load Testing}
-
-\bibitem[{Blum(2012)}]{Blum2012}
-Blum C (2012) {Hybrid metaheuristics in combinatorial optimization: A
-  tutorial}. Elsevier B.V., vol 7505 LNCS, pp 1--10,
-  \doi{10.1007/978-3-642-33860-1\_1}
 
 \bibitem[{Briand et~al(2005)Briand, Labiche, and Shousha}]{Briand2005}
 Briand LC, Labiche Y, Shousha M (2005) {Stress testing real-time systems with
@@ -141,11 +131,6 @@ Pohlheim H, Conrad M, Griep A (2005) {Evolutionary Safety Testing of Embedded
   Control Software by Automatically Generating Compact Test Data Sequences}.
   724, pp 804----814, \doi{10.4271/2005-01-0750}
 
-\bibitem[{Puchinger and Raidl(2005)}]{Puchinger2005}
-Puchinger J, Raidl R (2005) {Combining Metaheuristics and Exact Algorithms in
-  Combinatorial Optimization : A Survey and Classification}. vol 3562, pp
-  41--53, \doi{10.1007/11499305\_5}
-
 \bibitem[{Puschner and Nossal(1998)}]{Puschner1998}
 Puschner P, Nossal R (1998) {Testing the results of static worst-case
   execution-time analysis}. \doi{10.1109/REAL.1998.739738}
@@ -153,9 +138,6 @@ Puschner P, Nossal R (1998) {Testing the results of static worst-case
 \bibitem[{Raidl et~al(2010)Raidl, Puchinger, and Blum}]{raidl2010metaheuristic}
 Raidl GR, Puchinger J, Blum C (2010) Metaheuristic hybrids. In: Handbook of
   metaheuristics, Springer, pp 469--496
-
-\bibitem[{Raidl(2006)}]{Raidl2006}
-Raidl R (2006) {A Unified View on Hybrid Metaheuristics}. pp 1--12
 
 \bibitem[{Shousha(2003)}]{shousha2003performance}
 Shousha M (2003) Performance stress testing of real-time systems using genetic
@@ -180,14 +162,6 @@ Sullivan MO, V\"{o}ssner S, Wegener J, Ag Db (1998) {Testing Temporal
 \bibitem[{Sutton and Barto(2012)}]{Sutton2012}
 Sutton RS, Barto AG (2012) Reinforcement learning. vol~3, p 322,
   \doi{10.1109/MED.2013.6608833}, \eprint{1603.02199}
-
-\bibitem[{Szepesv{\'{a}}ri and Bartok(2010)}]{Szepesvari2010}
-Szepesv{\'{a}}ri C, Bartok G (2010) {Algorithms for Reinforcement Learning}.
-  vol~4, pp 1--103, \doi{10.2200/S00268ED1V01Y201005AIM009}
-
-\bibitem[{Talbi(2013)}]{Talbi2013}
-Talbi EG (2013) {Metaheuristics: From Design to Implementation}, vol~53.
-  \doi{10.1017/CBO9781107415324.004}, \eprint{arXiv:1011.1669v3}
 
 \bibitem[{Tracey(2000)}]{tracey2000search}
 Tracey NJ (2000) A search-based automated test-data generation framework for

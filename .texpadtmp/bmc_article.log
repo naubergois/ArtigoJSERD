@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.3.13)  6 MAY 2017 08:42
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.3.13)  8 MAY 2017 12:47
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1695,83 +1695,151 @@ Overfull \hbox (1.0pt too wide) has occurred while \output is active
 [1{/usr/local/texlive/2015/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
 
 ]
-LaTeX Font Info:    Try loading font information for TS1+txr on input line 333.
+LaTeX Font Info:    Try loading font information for TS1+txr on input line 322.
 
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/txfonts/ts1txr.fd
 File: ts1txr.fd 2000/12/15 v3.1
 ) [2]
 LaTeX Font Info:    Font shape `T1/txss/bx/n' will be
-(Font)              scaled to size 7.59998pt on input line 348.
+(Font)              scaled to size 7.59998pt on input line 356.
  [3]
-Underfull \hbox (badness 3679) in paragraph at lines 404--404
-\T1/txr/m/n/5 Alander et al.,1998
- []
+[4]
+LaTeX Font Info:    Font shape `T1/txss/m/n' will be
+(Font)              scaled to size 8.54997pt on input line 413.
 
-
-Underfull \hbox (badness 2126) in paragraph at lines 404--404
-\T1/txr/m/n/5 Briand et al., 2005
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 404--404
+Underfull \hbox (badness 10000) in paragraph at lines 413--413
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 404--404
-\T1/txr/m/n/5 Wegener and
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 404--404
-\T1/txr/m/n/5 Grocht-mann, 1998
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 404--404
+Underfull \hbox (badness 10000) in paragraph at lines 413--413
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 404--404
+Overfull \hbox (40.01466pt too wide) in paragraph at lines 413--413
+[]|[]| 
+ []
+
+
+Overfull \hbox (40.01466pt too wide) in paragraph at lines 414--414
+[]|[]| 
+ []
+
+
+Overfull \hbox (22.94284pt too wide) in paragraph at lines 414--414
+[]|$[]$|| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 415--415
 
  []
 
 
-Overfull \hbox (3.67117pt too wide) in paragraph at lines 406--406
-\T1/txss/m/n/7 Programming 
+Underfull \hbox (badness 10000) in paragraph at lines 415--415
+\T1/txr/m/n/9 Wegener and Grocht-mann,
  []
 
 
-Overfull \hbox (3.67117pt too wide) in paragraph at lines 407--407
-\T1/txss/m/n/7 Programming 
+Underfull \hbox (badness 10000) in paragraph at lines 415--415
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 415--415
+
+ []
+
+
+Overfull \hbox (1.82535pt too wide) in paragraph at lines 416--416
+[]\T1/txss/m/n/9 Simulated 
+ []
+
+
+Overfull \hbox (1.9194pt too wide) in paragraph at lines 416--416
+\T1/txss/m/n/9 Annealing 
+ []
+
+
+Overfull \hbox (22.94284pt too wide) in paragraph at lines 416--416
+[]|$[]$|| 
+ []
+
+
+Overfull \hbox (2.7744pt too wide) in paragraph at lines 417--417
+[]\T1/txss/m/n/9 Constraint 
+ []
+
+
+Overfull \hbox (15.03503pt too wide) in paragraph at lines 417--417
+\T1/txss/m/n/9 Programming 
+ []
+
+
+Overfull \hbox (22.94284pt too wide) in paragraph at lines 417--417
+[]|$[]$|| 
+ []
+
+
+Overfull \hbox (2.7744pt too wide) in paragraph at lines 418--418
+\T1/txss/m/n/9 Constraint 
+ []
+
+
+Overfull \hbox (15.03503pt too wide) in paragraph at lines 418--418
+\T1/txss/m/n/9 Programming 
+ []
+
+
+Overfull \hbox (22.94284pt too wide) in paragraph at lines 418--418
+[]|$[]$|| 
+ []
+
+
+Overfull \hbox (8.90472pt too wide) in paragraph at lines 421--421
+[]\T1/txss/m/n/9 Customized 
+ []
+
+
+Overfull \hbox (58.48576pt too wide) in paragraph at lines 408--423
+ [][] 
  []
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[4] [5] [6] [7]
-LaTeX Font Info:    Try loading font information for T1+txtt on input line 530.
+[5] [6] [7]
+LaTeX Font Info:    Try loading font information for T1+txtt on input line 484.
 
  (/usr/local/texlive/2015/texmf-dist/tex/latex/txfonts/t1txtt.fd
 File: t1txtt.fd 2000/12/15 v3.1
-) [8] [9]
+)
+[8] [9]
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 563.
+               Default added (so using `tbp') on input line 558.
 
-[10] [11]
-Overfull \hbox (11.60785pt too wide) detected at line 723
+[10]
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[11] [12]
+Overfull \hbox (11.60785pt too wide) detected at line 713
  $[] []$  
  []
 
-[12] [13]
+[13]
 LaTeX Font Info:    Font shape `T1/txss/bx/n' will be
-(Font)              scaled to size 6.64998pt on input line 788.
+(Font)              scaled to size 6.64998pt on input line 778.
  (/Users/naubergois/Downloads/bmc_template/.texpadtmp/bmc_article.bbl
 [14])
-Overfull \hbox (12.5pt too wide) in paragraph at lines 862--862
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Overfull \hbox (12.5pt too wide) in paragraph at lines 884--884
 [] [] 
  []
 
@@ -1779,15 +1847,7 @@ Overfull \hbox (12.5pt too wide) in paragraph at lines 862--862
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 902--902
-[]\T1/txr/m/n/10 Figure 6: |So-lu-tion rep-re-sen-ta-tion and
- []
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-
-Overfull \hbox (12.5pt too wide) in paragraph at lines 916--916
+Overfull \hbox (12.5pt too wide) in paragraph at lines 891--891
 [] [] 
  []
 
@@ -1801,7 +1861,29 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-Overfull \hbox (12.5pt too wide) in paragraph at lines 955--955
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Overfull \hbox (12.5pt too wide) in paragraph at lines 947--947
+[] [] 
+ []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Overfull \hbox (12.5pt too wide) in paragraph at lines 969--969
+[] [] 
+ []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Overfull \hbox (12.5pt too wide) in paragraph at lines 975--975
 [] [] 
  []
 
@@ -1809,46 +1891,13 @@ Overfull \hbox (12.5pt too wide) in paragraph at lines 955--955
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
-Overfull \hbox (12.5pt too wide) in paragraph at lines 995--995
-[] [] 
+Underfull \hbox (badness 2027) in paragraph at lines 983--983
+[]\T1/txr/m/n/10 Figure 18: |Re-sponse time of in-di-vid-u-als
  []
 
 
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
-Overfull \hbox (12.5pt too wide) in paragraph at lines 1017--1017
-[] [] 
- []
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
-Overfull \hbox (12.5pt too wide) in paragraph at lines 1023--1023
-[] [] 
- []
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-
-Underfull \hbox (badness 2027) in paragraph at lines 1031--1031
-[]\T1/txr/m/n/10 Figure 23: |Re-sponse time of in-di-vid-u-als
- []
-
-
-Underfull \hbox (badness 2027) in paragraph at lines 1037--1037
-[]\T1/txr/m/n/10 Figure 24: |Re-sponse time of in-di-vid-u-als
+Underfull \hbox (badness 2027) in paragraph at lines 989--989
+[]\T1/txr/m/n/10 Figure 19: |Re-sponse time of in-di-vid-u-als
  []
 
 
@@ -1869,11 +1918,11 @@ See the caption package documentation for explanation.
 
 (/Users/naubergois/Downloads/bmc_template/.texpadtmp/bmc_article.aux) ) 
 Here is how much of TeX's memory you used:
- 26944 strings out of 493089
- 496677 string characters out of 6134842
- 825561 words of memory out of 5000000
- 29791 multiletter control sequences out of 15000+600000
- 98193 words of font info for 170 fonts, out of 8000000 for 9000
+ 26927 strings out of 493089
+ 496298 string characters out of 6134842
+ 824561 words of memory out of 5000000
+ 29770 multiletter control sequences out of 15000+600000
+ 102975 words of font info for 174 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  103i,20n,103p,10413b,480s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/lo
@@ -1891,7 +1940,7 @@ xlive/2015/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2015
 /texmf-dist/fonts/type1/urw/times/utmri8a.pfb></usr/local/texlive/2015/texmf-di
 st/fonts/type1/urw/zapfding/uzdr.pfb>
 Output written on /Users/naubergois/Downloads/bmc_template/.texpadtmp/bmc_artic
-le.pdf (17 pages, 139423 bytes).
+le.pdf (17 pages, 138081 bytes).
 PDF statistics:
  120 PDF objects out of 1000 (max. 8388607)
  82 compressed objects within 1 object stream
