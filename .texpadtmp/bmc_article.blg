@@ -3,7 +3,7 @@ Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: bmc_article.aux
 The style file: ../spbasic.bst
 Database file #1: ../biblio.bib
-Repeated entry---line 646 of file ../biblio.bib
+Repeated entry---line 660 of file ../biblio.bib
  : @inproceedings{Gois2016
  :                        ,
 I'm skipping whatever remains of this entry
@@ -49,45 +49,45 @@ Warning--can't use both volume and number fields in Wegener1998
 Warning--empty booktitle in Wegener1997
 Warning--can't use both volume and number fields in Wegener1997
 Warning--empty booktitle in Stations
-You've used 40 entries,
+You've used 41 entries,
             3270 wiz_defined-function locations,
-            929 strings with 12660 characters,
-and the built_in function-call counts, 43070 in all, are:
-= -- 4601
-> -- 962
-< -- 53
-+ -- 445
-- -- 297
-* -- 2870
-:= -- 4998
-add.period$ -- 33
-call.type$ -- 40
-change.case$ -- 308
-chr.to.int$ -- 46
-cite$ -- 81
-duplicate$ -- 4300
-empty$ -- 3273
-format.name$ -- 411
-if$ -- 9051
+            936 strings with 13095 characters,
+and the built_in function-call counts, 45393 in all, are:
+= -- 4873
+> -- 972
+< -- 54
++ -- 453
+- -- 300
+* -- 3068
+:= -- 5254
+add.period$ -- 34
+call.type$ -- 41
+change.case$ -- 314
+chr.to.int$ -- 47
+cite$ -- 82
+duplicate$ -- 4558
+empty$ -- 3489
+format.name$ -- 415
+if$ -- 9551
 int.to.chr$ -- 1
 int.to.str$ -- 1
-missing$ -- 385
-newline$ -- 130
-num.names$ -- 160
-pop$ -- 1521
+missing$ -- 394
+newline$ -- 133
+num.names$ -- 164
+pop$ -- 1555
 preamble$ -- 1
-purify$ -- 259
+purify$ -- 264
 quote$ -- 0
-skip$ -- 1909
+skip$ -- 1963
 stack$ -- 0
-substring$ -- 3388
-swap$ -- 2381
+substring$ -- 3758
+swap$ -- 2460
 text.length$ -- 32
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 351
+type$ -- 360
 warning$ -- 41
-while$ -- 299
+while$ -- 307
 width$ -- 0
-write$ -- 442
+write$ -- 454
 (There was 1 error message)

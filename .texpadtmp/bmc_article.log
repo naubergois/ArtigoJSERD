@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.3.13)  8 MAY 2017 12:47
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.3.13)  9 MAY 2017 11:46
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1517,14 +1517,17 @@ File: md-frame-1.mdf 2013/07/01\ 1.9b: md-frame-1
 \c@mdf@zref@counter=\count205
 Package zref Info: New property: mdf@pagevalue on input line 895.
 )
-(/Users/naubergois/Downloads/bmc_template/.texpadtmp/bmc_article.aux)
+(/Users/naubergois/Downloads/bmc_template/.texpadtmp/bmc_article.aux
+
+LaTeX Warning: Label `hybridqexploration' multiply defined.
+
+)
 \openout1 = `bmc_article.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/txmi/m/it on input line 146.
 LaTeX Font Info:    Try loading font information for OML+txmi on input line 146
 .
-
-(/usr/local/texlive/2015/texmf-dist/tex/latex/txfonts/omltxmi.fd
+ (/usr/local/texlive/2015/texmf-dist/tex/latex/txfonts/omltxmi.fd
 File: omltxmi.fd 2000/12/15 v3.1
 )
 LaTeX Font Info:    ... okay on input line 146.
@@ -1816,38 +1819,52 @@ LaTeX Font Info:    Try loading font information for T1+txtt on input line 484.
  (/usr/local/texlive/2015/texmf-dist/tex/latex/txfonts/t1txtt.fd
 File: t1txtt.fd 2000/12/15 v3.1
 )
-[8] [9]
+[8] [9] [10]
 
-LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 558.
+./bmc_article.tex:650: Package inputenc Error: Keyboard character used is undef
+ined
+(inputenc)                in inputencoding `utf8'.
 
-[10]
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.650 ... applied as an automatic algorithm con^^\
+                                                  guration tool for tunning ...
 
-LaTeX Warning: `h' float specifier changed to `ht'.
+You need to provide a definition with \DeclareInputText 
+or \DeclareInputMath before using this key.
 
-[11] [12]
-Overfull \hbox (11.60785pt too wide) detected at line 713
+[11] [12] [13]
+Overfull \hbox (11.60785pt too wide) detected at line 805
  $[] []$  
  []
 
-[13]
+[14] [15]
 LaTeX Font Info:    Font shape `T1/txss/bx/n' will be
-(Font)              scaled to size 6.64998pt on input line 778.
+(Font)              scaled to size 6.64998pt on input line 883.
  (/Users/naubergois/Downloads/bmc_template/.texpadtmp/bmc_article.bbl
-[14])
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-
-Overfull \hbox (12.5pt too wide) in paragraph at lines 884--884
+[16])
+Overfull \hbox (12.5pt too wide) in paragraph at lines 989--989
 [] [] 
+ []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Underfull \hbox (badness 1184) in paragraph at lines 1019--1019
+[]\T1/txr/m/n/10 Figure 9: |Num-ber of re-quests by Search
  []
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-Overfull \hbox (12.5pt too wide) in paragraph at lines 891--891
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Overfull \hbox (12.5pt too wide) in paragraph at lines 1045--1045
 [] [] 
  []
 
@@ -1858,13 +1875,7 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
-Overfull \hbox (12.5pt too wide) in paragraph at lines 947--947
+Overfull \hbox (12.5pt too wide) in paragraph at lines 1067--1067
 [] [] 
  []
 
@@ -1872,18 +1883,7 @@ Overfull \hbox (12.5pt too wide) in paragraph at lines 947--947
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
-Overfull \hbox (12.5pt too wide) in paragraph at lines 969--969
-[] [] 
- []
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
-Overfull \hbox (12.5pt too wide) in paragraph at lines 975--975
+Overfull \hbox (12.5pt too wide) in paragraph at lines 1073--1073
 [] [] 
  []
 
@@ -1891,13 +1891,13 @@ Overfull \hbox (12.5pt too wide) in paragraph at lines 975--975
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-Underfull \hbox (badness 2027) in paragraph at lines 983--983
+Underfull \hbox (badness 2027) in paragraph at lines 1081--1081
+[]\T1/txr/m/n/10 Figure 17: |Re-sponse time of in-di-vid-u-als
+ []
+
+
+Underfull \hbox (badness 2027) in paragraph at lines 1087--1087
 []\T1/txr/m/n/10 Figure 18: |Re-sponse time of in-di-vid-u-als
- []
-
-
-Underfull \hbox (badness 2027) in paragraph at lines 989--989
-[]\T1/txr/m/n/10 Figure 19: |Re-sponse time of in-di-vid-u-als
  []
 
 
@@ -1911,39 +1911,42 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 
 AED: lastpage setting LastPage
-[15] [16] [17]
+[17] [18] [19]
 
 Package caption Warning: Unused \captionsetup[lstlisting] on input line 112.
 See the caption package documentation for explanation.
 
-(/Users/naubergois/Downloads/bmc_template/.texpadtmp/bmc_article.aux) ) 
+(/Users/naubergois/Downloads/bmc_template/.texpadtmp/bmc_article.aux)
+
+LaTeX Warning: There were multiply-defined labels.
+
+ ) 
 Here is how much of TeX's memory you used:
- 26927 strings out of 493089
- 496298 string characters out of 6134842
- 824561 words of memory out of 5000000
- 29770 multiletter control sequences out of 15000+600000
+ 26938 strings out of 493089
+ 496675 string characters out of 6134842
+ 823561 words of memory out of 5000000
+ 29781 multiletter control sequences out of 15000+600000
  102975 words of font info for 174 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  103i,20n,103p,10413b,480s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/lo
-cal/texlive/2015/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/texlive/201
-5/texmf-dist/fonts/type1/public/txfonts/rtcxr.pfb></usr/local/texlive/2015/texm
-f-dist/fonts/type1/public/txfonts/rtxmi.pfb></usr/local/texlive/2015/texmf-dist
-/fonts/type1/public/txfonts/rtxr.pfb></usr/local/texlive/2015/texmf-dist/fonts/
-type1/public/txfonts/t1xtt.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/
-public/txfonts/txex.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/
-txfonts/txsy.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/urw/helvetic/u
-hvb8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.p
-fb></usr/local/texlive/2015/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></us
-r/local/texlive/2015/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/te
-xlive/2015/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2015
-/texmf-dist/fonts/type1/urw/times/utmri8a.pfb></usr/local/texlive/2015/texmf-di
-st/fonts/type1/urw/zapfding/uzdr.pfb>
+{/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
+exlive/2015/texmf-dist/fonts/type1/public/txfonts/rtcxr.pfb></usr/local/texlive
+/2015/texmf-dist/fonts/type1/public/txfonts/rtxmi.pfb></usr/local/texlive/2015/
+texmf-dist/fonts/type1/public/txfonts/rtxr.pfb></usr/local/texlive/2015/texmf-d
+ist/fonts/type1/public/txfonts/t1xtt.pfb></usr/local/texlive/2015/texmf-dist/fo
+nts/type1/public/txfonts/txex.pfb></usr/local/texlive/2015/texmf-dist/fonts/typ
+e1/public/txfonts/txsy.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/urw/
+helvetic/uhvb8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/urw/helveti
+c/uhvr8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/urw/helvetic/uhvr8
+a.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></us
+r/local/texlive/2015/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/te
+xlive/2015/texmf-dist/fonts/type1/urw/times/utmri8a.pfb></usr/local/texlive/201
+5/texmf-dist/fonts/type1/urw/zapfding/uzdr.pfb>
 Output written on /Users/naubergois/Downloads/bmc_template/.texpadtmp/bmc_artic
-le.pdf (17 pages, 138081 bytes).
+le.pdf (19 pages, 146566 bytes).
 PDF statistics:
- 120 PDF objects out of 1000 (max. 8388607)
- 82 compressed objects within 1 object stream
+ 127 PDF objects out of 1000 (max. 8388607)
+ 87 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  33 words of extra memory for PDF output out of 10000 (max. 10000000)
 

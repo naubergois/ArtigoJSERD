@@ -1,4 +1,4 @@
-\begin{thebibliography}{40}
+\begin{thebibliography}{41}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{{#1}}
 \providecommand{\urlprefix}{URL }
@@ -111,6 +111,14 @@ Jiang Z (2010) {Automated analysis of load testing results}. PhD thesis,
 Lewis WE, Dobbs D, Veerapillai G (2005) {Software testing and continuous
   quality improvement}.
   \urlprefix\url{http://books.google.com/books?id=fgaBDd0TfT8C{\&}pgis=1}
+
+\bibitem[{{Manuel L{\'{o}}pez-Ib{\'{a}}{\~{n}}ez, J{\'{e}}r{\'{e}}mie
+  Dubois-Lacoste, Leslie P{\'{e}}rez C{\'{a}}ceres, Mauro
+  Birattari}(2016)}]{ManuelLopez-IbanezJeremieDubois-LacosteLesliePerezCaceresMauroBirattari2016}
+{Manuel L{\'{o}}pez-Ib{\'{a}}{\~{n}}ez, J{\'{e}}r{\'{e}}mie Dubois-Lacoste,
+  Leslie P{\'{e}}rez C{\'{a}}ceres, Mauro Birattari} TS (2016) {The irace
+  package: Iterated racing for automatic algorithm configuration}. Operations
+  Research Perspectives 3:43--58, \doi{10.1016/j.orp.2016.09.002}
 
 \bibitem[{Molyneaux(2009)}]{Molyneaux2009}
 Molyneaux I (2009) {The Art of Application Performance Testing: Help for
