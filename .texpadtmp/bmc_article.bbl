@@ -1,4 +1,4 @@
-\begin{thebibliography}{41}
+\begin{thebibliography}{43}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{{#1}}
 \providecommand{\urlprefix}{URL }
@@ -21,9 +21,19 @@ Alander JTJ, Mantere T, Turunen P (1998) {Genetic Algorithm Based Software
 Alesio SDI, Briand LC, Nejati S, Gotlieb A (2015) {Combining Genetic Algorithms
   and Constraint Programming}. vol~25
 
+\bibitem[{Aleti et~al(2016)Aleti, Moser, and Grunske}]{Aleti2016}
+Aleti A, Moser I, Grunske L (2016) {Analysing the fitness landscape of
+  search-based software testing problems}. Automated Software Engineering pp
+  1--19, \doi{10.1007/s10515-016-0197-7}
+
 \bibitem[{Babbar et~al(2011)Babbar, Bajpai, and Sarmah}]{Babbar2011}
 Babbar C, Bajpai N, Sarmah D (2011) {Web Application Performance Analysis based
   on Component Load Testing}
+
+\bibitem[{Blum and Roli(2003)}]{Blum2003}
+Blum C, Roli A (2003) {Metaheuristics in combinatorial optimization: overview
+  and conceptual comparison}. ACM Computing Surveys 35(3):189--213,
+  \doi{10.1007/s10479-005-3971-7}
 
 \bibitem[{Briand et~al(2005)Briand, Labiche, and Shousha}]{Briand2005}
 Briand LC, Labiche Y, Shousha M (2005) {Stress testing real-time systems with
