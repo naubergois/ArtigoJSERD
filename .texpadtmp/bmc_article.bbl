@@ -1,4 +1,4 @@
-\begin{thebibliography}{43}
+\begin{thebibliography}{41}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{{#1}}
 \providecommand{\urlprefix}{URL }
@@ -157,19 +157,13 @@ Puschner P, Nossal R (1998) {Testing the results of static worst-case
 Raidl GR, Puchinger J, Blum C (2010) Metaheuristic hybrids. In: Handbook of
   metaheuristics, Springer, pp 469--496
 
+\bibitem[{Sandler et~al(2004)Sandler, Badgett, and Thomas}]{Sandler2004}
+Sandler C, Badgett T, Thomas T (2004) {The Art of Software Testing}. John Wiley
+  \& Sons, p 200
+
 \bibitem[{Shousha(2003)}]{shousha2003performance}
 Shousha M (2003) Performance stress testing of real-time systems using genetic
   algorithms. PhD thesis, Carleton University Ottawa
-
-\bibitem[{Smith and Williams(2002)}]{Smith2002}
-Smith C, Williams L (2002) {Software Performance AntiPatterns; Common
-  Performance Problems and their Solutions}. vol~2, pp 797--806,
-  \urlprefix\url{http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.100.6968{\&}rep=rep1{\&}type=pdf}
-
-\bibitem[{Smith and Williams(2003)}]{Smith2003}
-Smith CU, Williams LG (2003) {More New Software Performance AntiPatterns:
-  EvenMore Ways to Shoot Yourself in the Foot}. pp 717--725,
-  \urlprefix\url{http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.123.4517{\&}rep=rep1{\&}type=pdf}
 
 \bibitem[{Sullivan et~al(1998)Sullivan, V\"{o}ssner, Wegener, and
   Ag}]{Sullivan}
@@ -188,11 +182,6 @@ Tracey NJ (2000) A search-based automated test-data generation framework for
 \bibitem[{Tracey et~al(1998)Tracey, Clark, and Mander}]{Tracey1998}
 Tracey NJ, Clark Ja, Mander KC (1998) {Automated Programme Flaw Finding using
   Simulated Annealing}
-
-\bibitem[{Vetoio(2011)}]{Vetoio2011}
-Vetoio V (2011) {PhD Thesis in Computer Science Automated generation of
-  architectural feedback from software performance analysis results Catia
-  Trubiani}
 
 \bibitem[{Wegener and Grochtmann(1998)}]{Wegener1998}
 Wegener J, Grochtmann M (1998) {Verifying timing constraints of real-time

@@ -45,57 +45,55 @@ Warning--missing publisher in Lewis2005
 Warning--empty booktitle in Mueller1998
 Warning--empty booktitle in Pohlheim2005
 Warning--empty booktitle in Puschner1998
-Warning--empty booktitle in Smith2002
-Warning--empty booktitle in Smith2003
+Warning--empty booktitle in Sandler2004
 Warning--empty booktitle in Sullivan
 Warning--empty booktitle in Sutton2012
 Warning--can't use both volume and number fields in Sutton2012
 Warning--empty booktitle in Tracey1998
-Warning--empty booktitle in Vetoio2011
 Warning--empty booktitle in Wegener1998
 Warning--can't use both volume and number fields in Wegener1998
 Warning--empty booktitle in Wegener1997
 Warning--can't use both volume and number fields in Wegener1997
 Warning--empty booktitle in Stations
-You've used 43 entries,
+You've used 41 entries,
             3270 wiz_defined-function locations,
-            951 strings with 13469 characters,
-and the built_in function-call counts, 48291 in all, are:
-= -- 5217
-> -- 1021
-< -- 56
-+ -- 479
-- -- 315
-* -- 3267
-:= -- 5567
-add.period$ -- 36
-call.type$ -- 43
-change.case$ -- 329
-chr.to.int$ -- 49
-cite$ -- 84
-duplicate$ -- 4865
-empty$ -- 3699
-format.name$ -- 438
-if$ -- 10158
+            938 strings with 12889 characters,
+and the built_in function-call counts, 45991 in all, are:
+= -- 4917
+> -- 1000
+< -- 51
++ -- 459
+- -- 309
+* -- 3163
+:= -- 5348
+add.period$ -- 35
+call.type$ -- 41
+change.case$ -- 317
+chr.to.int$ -- 47
+cite$ -- 80
+duplicate$ -- 4611
+empty$ -- 3558
+format.name$ -- 424
+if$ -- 9678
 int.to.chr$ -- 1
 int.to.str$ -- 1
-missing$ -- 414
-newline$ -- 139
-num.names$ -- 172
-pop$ -- 1630
+missing$ -- 398
+newline$ -- 133
+num.names$ -- 164
+pop$ -- 1523
 preamble$ -- 1
-purify$ -- 277
+purify$ -- 267
 quote$ -- 0
-skip$ -- 2097
+skip$ -- 1950
 stack$ -- 0
-substring$ -- 4035
-swap$ -- 2644
-text.length$ -- 33
+substring$ -- 3871
+swap$ -- 2445
+text.length$ -- 31
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 378
-warning$ -- 41
-while$ -- 327
+type$ -- 360
+warning$ -- 39
+while$ -- 312
 width$ -- 0
-write$ -- 478
+write$ -- 457
 (There were 3 error messages)

@@ -236,7 +236,7 @@ framexleftmargin=20pt
 \begin{abstractbox}
 
 \begin{abstract} 
-Some software systems must respond to thousands or millions of concurrent requests. These systems must be properly tested to ensure that they can function correctly under the expected load. Performance degradation and consequent system failures usually arise in stressed conditions. Stress testing subjects the program to heavy loads. In this context, search-based testing is seen as a promising approach to verify timing constraints. In this paper, We propose a hybrid metaheuristic approach that uses genetic algorithms, simulated annealing, and tabu search algorithms in a collaborative model using Q-Learning to improve stress search-based  testing and  automation. The main goal of the research is to find scenarios that maximize the number of users in the application with a response time below the response time service level. A tool named IAdapter, a JMeter plugin used for performing search-based stress tests, was developed. Two experiments were conducted to validate the proposed approach.
+Some software systems must respond to thousands or millions of concurrent requests. These systems must be properly tested to ensure that they can function correctly under the expected load. Performance degradation and consequent system failures usually arise in stressed conditions. Stress testing subjects the program to heavy loads. In this context, search-based testing is seen as a promising approach to verify timing constraints.The goal of this research is to use a reinforcement learning technique to optimize the choice of neighboring solutions to explore, reducing the time needed to obtain the scenarios with the longest response time in the application. A tool named IAdapter, a JMeter plugin used for performing search-based stress tests, was extended. One experiment was conducted. HybridQ obtained solutions with greater fitness value consuming  same time, but it needs a much greater number of requests than the other algorithms.
 \end{abstract}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -316,15 +316,15 @@ Search-based testing is seen as a promising approach to verify timing constraint
 
 Stress tests need to occur within a delimited period in a software development project. The test period of a software can last from a few days to months, depending on the project schedule. During the test period, the tests need to find the highest number of application failures consuming as little time as possible. Most research studies use search-based techniques to find best- or worst-case test workloads. The presented research work is distinguished from others by improving the choice of neighboring solutions, reducing the time needed to obtain the scenarios with the longest response time in the application. 
 
-The present study extends the article "Improving stress search based testing using a hybrid metaheuristic approach"  \citep{Gois2016} in order to ascertain if the use of the Q-learning technique allows the meta-heuristic algorithms to find application failures with a smaller number of requests consuming a shorter time assuming that the same application can be submitted to more than one test execution. This paper  addresses the following  research question:
+The present study extends the article "Improving stress search based testing using a hybrid metaheuristic approach"  \citep{Gois2016} in order to ascertain if the use of the Q-learning technique allows the meta-heuristic algorithms to improve the search to application failures with a smaller number of requests consuming a shorter time assuming that the same application can be submitted to more than one test execution. This paper  addresses the following  research question:
 
 \begin{itemize}
 \item Could the q-learning technique be used to improve the choice of neighboring solutions, improving the number of requests and the time needed to find scenarios with the longest response time in the application under test?
 \end{itemize}
 
-The main contribution of this study is that it proposes the use of Q-learning in the choice of neighboring solutions and replacing the mutation operator for genetic algorithms. Three experiments were conducted to validate the proposed approach. The first experiment was performed on an emulated environment, and the second one was performed using an installed JPetStore application.
+The main contribution of this study is that it proposes the use of Q-learning in the choice of neighboring solutions. One experiment was conducted to validate the proposed approach. The  experiment was performed using an installed OpenCart application.
 
-The remainder of the paper is organized as follows. Section 2 presents a brief introduction about search-based testing. Section 3 presents concepts about  search-based stress testing. Section 4 presents details about metaheuristic and hybrid metaheuristic. Section 5 presents concepts about Q-Learning. Section 6 presents the proposed solution. Section 7 shows the results of two experiments performed using the HybridQ algorithm.  Conclusions and further work are presented in Section 8.
+The remainder of the paper is organized as follows. The next section gives background on metaheuristic, search-based stress testing and q-learning. Section 3 presents the related works of this study. Section 4 presents presents the Hybrid approach proposed by Gois et al. \citep{Gois2016}. Section 5 presents the proposed solution. Section 6 shows the results of the experiment performed using the HybridQ algorithm.  Conclusions and further work are presented in Section 7.
 
 \section{Background}
 
@@ -367,9 +367,7 @@ The crossover operation or recombination recombines two or more individuals to p
 A combination of one metaheuristic with components from other metaheuristics is called a hybrid metaheuristic. The concept of hybrid metaheuristics, combining different metaheuristic strategies and algorithms, dates back to the 1980s. Today, we can observe a generalized common agreement on the advantage of combining components from different search techniques and the tendency of designing hybrid techniques is widespread in the fields of operations research and artificial intelligence \citep{raidl2010metaheuristic}. 
 
 
-This paper addresses the use of hybrid metaheuristics in conjunction with reinforcement learning techniques in search-based tests. 
-
-Reinforcement learning (RL) refers to both a learning problem and a subfield of machine learning. As a learning problem, it refers to learning to control a system so as to maximize some numerical value which represents a long-term objective. The basic idea of Reinforcement learning  is simply to capture the most important aspects of the real problem, facing a learning agent interacting with its environment to achieve a goal \citep{Sutton2012}. Reinforcement learning is learning what to do—how to map situations to actions—so as to maximize a numerical reward signal. The learner needs to discover which actions yield the most reward by trying them \citep{Sutton2012}.
+This paper addresses the use of hybrid metaheuristics in conjunction with reinforcement learning techniques in search-based tests. Reinforcement learning (RL) refers to both a learning problem and a subfield of machine learning. As a learning problem, it refers to learning to control a system so as to maximize some numerical value which represents a long-term objective. The basic idea of Reinforcement learning  is simply to capture the most important aspects of the real problem, facing a learning agent interacting with its environment to achieve a goal \citep{Sutton2012}. Reinforcement learning is learning what to do—how to map situations to actions—so as to maximize a numerical reward signal. The learner needs to discover which actions yield the most reward by trying them \citep{Sutton2012}.
 
 In Reinforcement Learning, an agent wanders in an unknown environment and tries to maximize its long term return by performing actions and receiving rewards. The challenge is to understand how a current action will affect future rewards. A good way to model this task is with Markov Decision Processes (MDP). Markov decision processes (MDPs) provide a mathematical framework for modeling decision making. In Reinforcement Learning, all agents act in two phases: Exploration vs Explotation. In Exploration phase, the agents try to discover better action selections to improve its knowledge. In Exploitation phase, the agents try to maximize its reward, based on what is already know.
 
@@ -524,7 +522,7 @@ fit=numberOfUsersWeight*numberOfUsers\\
 \end{aligned}
 \end{equation}
 
-The users and response time factors were chosen because they are common units of measurement in load test tools. The proposed solution's fitness function uses a series of manually adjustable user-defined weights (90percentileweight, 80percentileweight,  70percentileweight, maxResponseWeight, and numberOfUsersWeight). These weights make it possible to customize the search plugin's functionality. A penalty is applied when the response time of an application under test runs longer that the service level. The penalty is calculated by the follow equation:
+The users and response time factors were chosen because they are common units of measurement in load test tools \cite{Sandler2004}. The proposed solution's fitness function uses a series of manually adjustable user-defined weights (90percentileweight, 80percentileweight,  70percentileweight, maxResponseWeight, and numberOfUsersWeight). These weights make it possible to customize the search plugin's functionality. A penalty is applied when the response time of an application under test runs longer that the service level. The penalty is calculated by the follow equation:
 
 \begin{equation}
 \begin{aligned}
@@ -538,12 +536,15 @@ penalty=100 * \Delta \\
 \section{Improving Stress Search Based Testing using Q-Learning and Hybrid Metaheuristic Approach}
 
 
-The goal of this research is to use a reinforcement learning technique to optimize the choice of neighboring solutions to explore, reducing the time needed to obtain the scenarios with the longest response time in the application. The research assumes as premise that the same application under performance tests can be submitted to more than one cycle of tests execution, reducing the cost of the exploration phase of the q-learning algorithm used. The solution, named HybridQ, uses the GA, SA and Tabu Search algorithms in a collaborative approach. Just like most reinforcement learning problems the proposed solution works in two different phases: exploration and explotation. 
+The goal of this research is to use a reinforcement learning technique to optimize the choice of neighboring solutions to explore, reducing the time needed to obtain the scenarios with the longest response time in the application.The research assumes that HybridQ is more expensive than Hybrid because q-learning. The reasearch has as premise that the same application under performance tests can be submitted to more than one cycle of tests execution, reducing the cost of the exploration phase of the q-learning algorithm used. 
+
+
+The solution, named HybridQ, uses the GA, SA and Tabu Search algorithms in a collaborative approach. Just like most reinforcement learning problems the proposed solution works in two different phases: exploration and exploitation. The following subsections show details of the exploration and exploitation phases and the integration between metaheuristics and the Q-Learning algorithm.
 
 
 \subsection{Exploration phase}
 
-The exploration phase uses a markov model, as shown in Fig. \ref{fig:mdphybridq}, the proposed MDP model  has three main states based on response time. A test may have a response time greater than 1.2 times the maximum response time alloowed, between 0.8 and 1.2 times the maximum response time allowed or less than 0.8 times the maximum response time allowed. The values of 1.2 and 0.8 were chosen from the assumption of a tolerance margin of 20\% for the application under test. This margin may be higher or lower depending on the business requirements of the application.
+The exploration phase uses a markov model, as shown in Fig. \ref{fig:mdphybridq}, the proposed MDP model  has three main states based on response time. A test may have a response time greater than 1.2 times the maximum response time allowed, between 0.8 and 1.2 times the maximum response time allowed or less than 0.8 times the maximum response time allowed. The values of 1.2 and 0.8 were chosen from the assumption of a tolerance margin of 20\% for the application under test. This margin may be higher or lower depending on the business requirements of the application.
 
 The algorithm maintains three different tables ( Table \ref{pab:mdp}), one for each state. The selection of which table to use depends on the response time of the application.
 
@@ -618,16 +619,25 @@ Phase                         & Exploration         & Exploration
 
 \subsection{Exploitation phase}
 
-The main objective of the exploitation phase is to choose the best neighboring solution based on the Q value.Algorithm \ref{hybridqexploitation} presents the main steps of exploitation phase. In first line, the algorithm gets the original genome. In second line, HybridQ gets the maximum \textit{q} value.In third line, the algorithm gets the key value in Table that have the maximum \textit{q} value. In line number 4, The key is separated into two parts using the \# delimiter. The first part of the key is action and the second part is the test scenario. If the action equals '\textit{up}' value, the genome is incremented in its users. If the action equals '\textit{down}' value, the genome is incremented in its users.
+The main objective of the exploitation phase is to choose the best neighboring solution based on the Q value. The research expected that Q-Learning improve Hybrid algorithm replacing the random characteristic of the tabu search, simulated  annealing and genetic algorithms operators by the direction given by the q-learning in the exploration phase. Algorithm \ref{hybridqexploitation} presents the main steps of exploitation phase. In first line, the algorithm gets the original genome. In lines 2 to 11, HybridQ gets the maximum, the second maximum or the third maximum \textit{q} value, depending on the random value of the random variable.The algorithm chooses one of the three largest values of q. The variation of the highest values was inserted in the algorithm to escape the local optimals. In line 12, the algorithm gets the key value in Table that have the maximum \textit{q} value. In line number 13, The key is separated into two parts using the \# delimiter. The first part of the key is action and the second part is the test scenario. If the action equals '\textit{up}' value, the genome is incremented in its users. If the action equals '\textit{down}' value, the genome is incremented in its users. Finally, the test scenario is changed and the new genome is returned.
 
-Fig. \ref{fig:neighservice} presents how one of the neighbors of a test is generated using Q-Learning. The solution uses a service called Q-Neighborhood Service to generate the neighbor from the action that has the highest value of Q.
+
 
 
 \begin{algorithm}[h]
   \caption{HybridQ exploitation phase }\label{hybridqexploitation}
   \begin{algorithmic}[1]    
-    \State $Gene[] genome \gets service.getTestGenome()$     
+    \State $Gene[] genome \gets service.getTestGenome()$
+    \State $random \gets Random.nextInt(3)$
+    \If {random==1}     
     \State $qMaxValue \gets qTable.getMaxValue(responseTime)$
+    \EndIf
+    \If {random==2}     
+    \State $qMaxValue \gets qTable.getSecondMaxValue(responseTime)$
+    \EndIf
+    \If {random==3}     
+    \State $qMaxValue \gets qTable.getThirdMaxValue(responseTime)$
+    \EndIf
     \State $key \gets qTable.selectKey(qMaxValue)$
     \State $String[]\  keySplit \gets key.split('\#')$ 
     \State $action \gets keySplit[0]$
@@ -643,16 +653,17 @@ Fig. \ref{fig:neighservice} presents how one of the neighbors of a test is gener
   \end{algorithmic}
 \end{algorithm}
 
+\subsection{Integration between metaheuristics and the Q-Learning algorithm }
+
+The Q-learning algorithm is used by Tabu Search or Simulated Annealing to obtain the neighbors and in the mutation operator of the genetic algorithm. Unlike the traditional processes of obtaining neighboring solutions such as random change and permutation, the decision to change a genome gene is made from the action that has the highest value of Q. Fig. \ref{fig:neighservice} presents how one of the neighbors of a test is generated using Q-Learning in IAdapter. The solution uses a service called Q-Neighborhood Service to generate the neighbor from the action that has the highest value of Q.
 
 
+\section{Experiment}
+
+We conducted one experiment in order to verify the effectiveness of the HybridQ. The iterated racing procedure (irace) was applied as an automatic algorithm conguration tool for tunning metaheuristics parameters. Iterated racing is a generalization of the iterated F-race procedure to automatize the arduous task of configuring the parameters of an optimization algorithm \cite{ManuelLopez-IbanezJeremieDubois-LacosteLesliePerezCaceresMauroBirattari2016}. The best parameters obtaind from irace was a population size of 5 individuals, a crossover value of 0.7551, a mutation value of 0.7947, an elitism value of 0.5356 and the maximum number of iterations of 16. The experiment ran for 16 generations in an docker evinronment on a server with 16 Gb of memory and 500 Gb hard disk. The experiment used an initial population of 5 individuals by metaheuristics. The genetic algorithm used the top 4 individuals from each generation in the crossover operation. The Tabu list was configured with the size of 10 individuals and expired every 2 generations.  The mutation operation was applied to 79\% of the population on each generation. The experiments use tabu search, genetic algorithms, simulated annealing, the hybrid metaheuristic approach proposed by Gois et al. \citep{Gois2016} and the HybridQ approach. 
 
 
-\section{Experiments}
-
-We conducted three experiments in order to verify the effectiveness of the HybridQ. The iterated racing procedure (irace) was applied as an automatic algorithm conguration tool for tunning metaheuristics parameters. Iterated racing is a generalization of the iterated F-race procedure to automatize the arduous task of configuring the parameters of an optimization algorithm \cite{ManuelLopez-IbanezJeremieDubois-LacosteLesliePerezCaceresMauroBirattari2016}. The best parameters obtaind from irace was a population size of 5 individuals, a crossover value of 0.7551, a mutation value of 0.7947, an elitism value of 0.5356 and the maximum number of iterations of 16. All experiments ran for 16 generations in an emulated evinronment. The experiments used an initial population of 5 individuals by metaheuristics. The genetic algorithm used the top 4 individuals from each generation in the crossover operation. The Tabu list was configured with the size of 10 individuals and expired every 2 generations.  The mutation operation was applied to 79\% of the population on each generation. The experiments use tabu search, genetic algorithms, simulated annealing, the hybrid metaheuristic approach proposed by Gois et al. \citep{Gois2016} and the HybridQ approach. 
-
-
-The objective function applied is intended to maximize the response time of the scenarios being tested.  In these experiments, better fitness values coincide with finding scenarios with higher values of response time. A penalty is applied when the response time is greater than the  maximum response time expected. The experiments used the following fitness (goal) function:
+The objective function applied is intended to maximize the response time of the scenarios being tested.  In these experiments, better fitness values coincide with finding scenarios with higher values of response time. A penalty is applied when the response time is greater than the  maximum response time expected. The experiment used the following fitness (goal) function:
 
 \begin{equation}
 \begin{aligned}
@@ -665,14 +676,14 @@ fitness=
 \end{aligned}
 \end{equation}
 
-For the experiments an objective function with a single factor was chosen, since users and response time are conflicting factors and will be approached together in a new multi-objective heuristic research. All tests in the experiment were conducted without the need of a tester, automating the process of executing and designing performance test scenarios.    
+For the experiment an objective function with a single factor was chosen, since users and response time are conflicting factors. All tests in the experiment were conducted without the need of a tester, automating the process of executing and designing performance test scenarios.    
 
 \subsection{Experiment Research Questions}
 
 The following research question is addressed:
 
 \begin{itemize}
-\item Is q-learning technique improve the choice of neighboring solutions, improving the number of requests and the time needed to find scenarios with the longest response time in the application under test?
+\item Is Q-learning technique improve the choice of neighboring solutions, improving the number of requests and the time needed to find scenarios with the longest response time in the application under test?
 \end{itemize}
 
 \subsection{Variables}
@@ -684,8 +695,8 @@ The independent variable is the algorithms used in each experiment. The dependen
 \begin{itemize}
 \item With regard to the optimal solution found by each algorithm:
 \begin{itemize}
-\item $H1_{0}$ (A null hypothesis) : The HybridQ didn't found best solution than the other metaheuristic approaches.
-\item $H1_{1}$  : The HybridQ found best solution than the other metaheuristic approaches.
+\item $H1_{0}$ (null hypothesis) : The HybridQ does not find better solution than the other metaheuristic approaches.
+\item $H1_{1}$  : The HybridQ finds better solution than the one discovered by other metaheuristic approaches.
 \end{itemize}
 \end{itemize}
 
@@ -693,78 +704,27 @@ The independent variable is the algorithms used in each experiment. The dependen
 \begin{itemize}
 \item With regard to the time consumed to find the optimal solution of each algorithm:
 \begin{itemize}
-\item $H2_{0}$ (A null hypothesis) : The Hybrid algorithm consumed more requests than the other algorithms in the experiments performed.
-\item $H2_{1}$  : The HybridQ algorithm don't consume more requests than the other algorithms in the executed experiments.
+\item $H2_{0}$ (null hypothesis) : The HybridQ algorithm realizes more requests than the other algorithms in the experiments performed.
+\item $H2_{1}$  : The HybridQ algorithm does not realize more requests than the other algorithms in the executed experiments.
 \end{itemize}
 \end{itemize}
 
 
 \begin{itemize}
-\item With regard to the the number of requests needed to find the optimal solution of each algorithm:
+\item With regard to the number of requests needed to find the optimal solution of each algorithm:
 \begin{itemize}
-\item $H3_{0}$ (A null hypothesis) : The Hybrid algorithm consumed more time to find the optimal solution than the other algorithms in the experiments performed.
-\item $H3_{1}$  : The Hybrid algorithm don't consume more time to find the optimal solution than the other algorithms in the experiments performed.
+\item $H3_{0}$ (null hypothesis) : The HybridQ algorithm needs more time to find the optimal solution than the other algorithms in the experiments performed.
+\item $H3_{1}$  : The HybridQ algorithm does not need more time to find the optimal solution than the other algorithms in the experiments performed.
 \end{itemize}
 \end{itemize}
 
 \subsection{Experiment phases}
 
-All the experiments was conducted in two phases. The first phase verified the number of requisitions and time required for the HybridQ exploration phase. The second phase ran the stress test using GA, Tabu Search, Simulated Annealing, Hybrid and HybridQ algorithms simultaneously.
-
-\subsection{The Ramp and Circuitous Treasure Experiment}
-
-The Ramp and Circuitous Treasure scenarios implement two performance antipatterns.  Circuitous Treasure Hunt antipattern occurs when software retrieves data from a first componet, uses those results in a second component, retrieves data from the second component, and so on, until the last results are obtained (Fig. \ref{fig:circuit})  \citep{Smith2002} \citep{Smith2003}. The Ramp is an antipattern where the processing time increases as the system is used. The Ramp can arise in several different ways. Any situation in which the amount of processing required to satisfy a request increases over time will produce the behavior. With the Ramp antipattern, the memory consumption of the application is growing over time (Fig. \ref{fig:ramp}). 
-
-
-Fig. \ref{fig:fitnessbygeneration1}  presents the fitness value obtained by each metaheuristic. HybridQ metaheuristic obtained the better fitness values.  
-
-
-
-
-
-
-
-
-Despite having obtained the best fitness value in each generation, the Hybrid algorithm performs twice as many requests as the  tabu search (Fig. \ref{fig:numberofrequestsbysearchmethod}). The HybridQ algorithm obtained the best fitness value. Figure \ref{fig:boxplot1} shows the average, minimal e maximum value by search method.
-
-Fig. \ref{fig:summaryboxplot1} presents the maximum, average, median and minimum fitness value by generation. The maximun fitness value increases at each generation. Figure \ref{fig:density1} presents the density graph of the number of users by fitness value. The range between 100 and 150 users has the highest number of individuals found with higher fitness values.
-
-
-Table \ref{tab:bestindividuals} shows 4 individuals with 164 to 169 users. These are the scenarios with the maximum number of users found with the best response time. The first individual has 153 users in Happy Scenario 2, 16 users in Happy Scenario 1 and a response time of 13 seconds. None of the best individuals have one of the antipatterns used in the experiment.
-
-
-
-% Please add the following required packages to your document preamble:
-% \usepackage[table,xcdraw]{xcolor}
-% If you use beamer only pass "xcolor=table" option, i.e. \documentclass[xcolor=table]{beamer}
-\begin{table}[h]
-\centering
-\caption{Best individuals found in the first experiment}
-\label{tab:bestindividuals}
-\begin{tabular}{lllllll}
-\rowcolor[HTML]{C0C0C0} 
-\textbf{Search Method} & \textbf{Generation} & \textbf{Users} & \textbf{fitness Value} & \textbf{Happy 2} & \textbf{Happy 1} & \textbf{Resp. Time} \\
-HybridQ & 17 & 169 & 500740 & 153 & 16 & 13 \\
-HybridQ & 16 & 169 & 500700 & 153 & 16 & 15 \\
-HybridQ & 13 & 164 & 489740 & 149 & 15 & 13 \\
-HybridQ & 15 & 164 & 489740 & 149 & 15 & 13
-\end{tabular}
-\end{table}
-
-Fig. \ref{fig:responsetimegenerationalltests1} presents the response time by the number of users of individuals with Happy Scenario 1 and Happy Scenario 2. The figure illustrates that the individuals with best fitness value have more users and lower response time. 
-
-
-Fig. \ref{fig:mdpexperiment1} presents the Markov Decision Process (MDP) for the experiment. When the response time it is bellow or equal the service level, the action with major reward it is increase the number of users and include more positions with the Happy Scenario 2 (Happy 2). When the response time is greater than the service level, the action with the highest reward value decreases the number of users and includes more positions with Happy Scenario 2. The actions with the least reward value contains the both antipatterns Circuitous Treasure (CTH) and The Ramp antipatterns (Ramp).
-
-In the first experiment, We conclude that the metaheuristics converged to scenarios with a happy path, excluding the scenarios with antipatterns. The hybridQ and hybrid metaheuristic returned individuals with higher fitness scores. However, the Hybrid metaheuristic made twice as many requests as Tabu Search to overcome it. 
-
+The experiment was conducted in two phases. The first phase verified the number of requisitions and time required for the HybridQ exploration phase. The second phase ran the stress test using GA, Tabu Search, Simulated Annealing, Hybrid and HybridQ algorithms simultaneously.
 
 \subsection{OpenCart Experiment}
 
-One experiment was conducted to test the use of the HybridQ algorithm in a real implemented application.  The chosen application was the OpenCart application , available at \url{opencart.com}. OpenCart is free open source ecommerce platform for online merchants. OpenCart works with PHP 5 and MySQL. 
-
-
-The maximum tolerated response time in the test was 10 seconds. The whole process of stress and performance tests, which run for 2 days and  with about 1.800 executions, was carried out without the need for monitoring by a test designer. The tool automatically selected the next scenarios to be run up to the limit of eleven generations previously established. 
+The experiment was conducted to test the use of the HybridQ algorithm in a real implemented application.  The chosen application was the OpenCart application , available at \url{opencart.com}. OpenCart is free open source ecommerce platform for online merchants. OpenCart works with PHP 5 and MySQL. The maximum tolerated response time in the test was 5 seconds. The whole process of stress and performance tests, which run for 2 days and  with about 1.500 executions, was carried out without the need for monitoring by a test designer. The tool automatically selected the next scenarios to be run up to the limit of eleven generations previously established. 
 
 The experiments use the follow application features:
 
@@ -777,108 +737,72 @@ The experiments use the follow application features:
 \item Remove Item: The application remove item from shopping cart. 
 \end{itemize}
 
+\subsubsection{Q-Learning Training Phase}
+
+The application was submitted to 1 hour of training with the  Q-learning algorithm using all test scenarios  and was obtained the Table \ref{tab:opencartlearning1} with the values of \textit{q}  for response times bellow than service level. The action and state with best q-value is increment the number of users ('up') in Add to Cart feature. The learning phase required 1.431 requisitions for application under test. 
 
 
-\subsection{JPetStore Application Experiment}
+% Please add the following required packages to your document preamble:
+% \usepackage[table,xcdraw]{xcolor}
+% If you use beamer only pass "xcolor=table" option, i.e. \documentclass[xcolor=table]{beamer}
+\begin{table}[]
+\centering
+\caption{Q values for response times bellow than service level}
+\label{tab:opencartlearning1}
+\begin{tabular}{|l|l|l|l|l|l|}
+\hline
+\rowcolor[HTML]{EFEFEF} 
+\textbf{Action} & \textbf{Feature} & \textbf{Q- value} & \textbf{State}                      & \textbf{Feature}                             & \textbf{Q- value}                          \\ \hline
+up              & Main Page        & -0.0405763        & \cellcolor[HTML]{EFEFEF}\textbf{up} & \cellcolor[HTML]{EFEFEF}\textbf{Add to Cart} & \cellcolor[HTML]{EFEFEF}\textbf{0.0390237} \\ \hline
+down            & Main Page        & 0.00079202        & down                                & Add to Cart                                  & -0.00079202                                \\ \hline
+same            & Main Page        & -0.0398           & same                                & Add to Cart                                  & -0.0398                                    \\ \hline
+up              & Search Page      & -0.00079202       & up                                  & View Cart                                    & -0.0398                                    \\ \hline
+down            & Search Page      & -0.0398           & down                                & View Cart                                    & -0.0398                                    \\ \hline
+same            & Search Page      & -0.0398           & same                                & View Cart                                    & -0.0398                                    \\ \hline
+up              & Product Detail   & -0.00079202       & up                                  & Remove Item                                  & -0.0398                                    \\ \hline
+down            & Product Detail   & -0.00079202       & down                                & Remove Item                                  & -0.0398                                    \\ \hline
+same            & Product Detail   & -0.0398           & same                                & Remove Item                                  & -0.0398                                    \\ \hline
+\end{tabular}
+\end{table}
 
-One experiment was conducted to test the use of the HybridQ algorithm in a real implemented application. The chosen application was the JPetStore, available at \url{https://hub.docker.com/r/pocking/jpetstore/}. The maximum tolerated response time in the test was 500 seconds.  Any  individuals who obtained a time longer than the stipulated maximum time suffered penalties.  The whole process of stress and performance tests, which run for 2 days and  with about 1.800 executions, was carried out without the need for monitoring by a test designer. The tool automatically selected the next scenarios to be run up to the limit of eleven generations previously established. The experiments use the follow application features:
+\subsubsection{Results}
 
+Figure \ref{fig:experiment1} presents the number of requests by maximum fitness value. HybridQ algorithm obtains the maximum value of fitness: 364860 ($H1_{1}$ hypothesis).  HybridQ obtained a solution with greater fitness value, but it needs a much greater number of requests than the other algorithms, not contemplating the hypothesis $H2_{1}$. GA is the algorithm that obtain the best fitness value with minor number of requests ($H1_{0}$ hypothesis). All algorithms consume the same time of test (6 hours). The scenario with more fitness value has 4,8 seconds of response time and 38 users:
 
 \begin{itemize}
-\item Enter in the Catalog: the application presents the catalog of pets.
-\item Fish: The application shows the recorded fish items.
-\item Register:  a new user is registered into the system.
-\item Dogs: The application shows the recorded dogs supplies.
-\item Shopping Cart: the application displays the shopping cart.
-\item Add or Remove in Shopping Cart: the application adds and removes items from shopping cart.
+\item 25 users on search page;
+\item 10 users on Add to Cart feature;
+\item 2 users removing items from cart;
+\item 1 users on Main Page. 
 \end{itemize}
 
-Table \ref{tab:isolated} presents the maximum number of users found in each scenario who obtained a time lower than the stipulated maximum time of 500 seconds.
+The t-Test and Wilcoxon Rank Sum Test was applied using the R language. The test results show that HybridQ and HybriD algorithms is superior than GA, Tabu Search and Simulated Annealing with p < 0.02. t-Test shows that the mean of HybridQ fitness value is superior than Hybrid.
+
+\begin{lstlisting}
+	Welch Two Sample t-test
+
+data:  b\$MAXFIT and c\$MAXFIT
+t = 13.829, df = 31678, p-value < 2.2e-16
+alternative hypothesis: true difference in means is not equal to 0
+95 percent confidence interval:
+ 7506.846 9986.226
+sample estimates:
+mean of x mean of y 
+ 322007.5  313260.9 
+
+\end{lstlisting}
 
 
-% Please add the following required packages to your document preamble:
-% \usepackage[table,xcdraw]{xcolor}
-% If you use beamer only pass "xcolor=table" option, i.e. \documentclass[xcolor=table]{beamer}
-\begin{table}[h!]
-\centering
-\caption{Maximum number of users of isolated test scenarios }
-\label{tab:isolated}
-\begin{tabular}{ll}
-\rowcolor[HTML]{FFCCC9} 
-\textbf{Scenario}    & \textbf{Max number of Users} \\
-Fish                 & 85                           \\
-Enter in The Catalog & 60                           \\
-Dogs                 & 75                           \\
-Cart                 & 70                           \\
-Register             & 90                          
-\end{tabular}
-\end{table}
-
-The Fig. \ref{fig:surface} and \ref{fig:surface2} present the response time by generation and by the number of users.
-
-
-
-The experiment used the following fitness function:
-
-\begin{equation}
-\begin{aligned}
-fitness=\begin{cases} n*\{3000*numberOfUsers-20* 90percentiletime-20*80percentiletime\\-20*70percentiletime
--20*maxResponseTime-penalty\} , \textsf{where n is a }\\\ \textsf{ bonus for an individual that have one or more chosen scenarios.} 
-\end{cases}
-\end{aligned}
-\end{equation}
-
-
-The purpose of the fitness function is to maximize the number of users and minimize the response time in the tests containing a selected \textit{n} functionalities. For example, it is possible to double the fitness value for tests that have the fish and user registration scenario. 
-
-This experiment tries to find the scenarios with a maximum number of users and best response time tests that contain the Cart and Register features. Figure. \ref{fig:experiment31} and \ref{fig:experiment32} shows the fitness value by generation. The HybridQ obtained the best fitness values in all generations.
-
-
-
-The Fig. \ref{fig:numberofrequestsbysearchmethod3} shows the fitness value by number of requests by each Search Method. In the figure, it is possible to observe that HybridQ obtained the best fitness value with the same number of requests as the other algorithms.
-
-
-
-Table \ref{tab:bestindividuals3} shows 4 individuals with 233 to 398 users.  The first individual has 73 users in the Fish scenario, 17 users in the Dogs scenario, 50 users in  the Cart scenario, 33 Users in the Register scenario  and a response time of 357 seconds. 
-
-% Please add the following required packages to your document preamble:
-% \usepackage[table,xcdraw]{xcolor}
-% If you use beamer only pass "xcolor=table" option, i.e. \documentclass[xcolor=table]{beamer}
-\begin{table}[h!]
-\centering
-\caption{Best individuals found in JPetStore first experiment}
-\label{tab:bestindividuals3}
-\begin{tabular}{lllllllll}
-\rowcolor[HTML]{C0C0C0} 
-\textbf{Search Method} & \textbf{Response} & \textbf{Users} & \textbf{Gen} & \textbf{Fitness} & \textbf{fish} & \textbf{Dogs} & \textbf{Cart} & \textbf{Register} \\
-HybridQ                & 357               & 173            & 9            & 44773            & 73             & 17            & 50            & 33                \\
-HybridQ                & 398               & 171            & 10           & 44831            & 57             & 33            & 48            & 33                \\
-HybridQ                & 331               & 164            & 9            & 44774            & 71             & 14            & 51            & 28                \\
-HybridQ                & 233               & 159            & 9            & 44783            & 63             & 31            & 32            & 33               
-\end{tabular}
-\end{table}
-
-We conclude that HybridQ found the individuals with greater number of users. The scenario with greater number of users is the Fish search feature. The hybrid metaheuristic with Q-Learning (HybridQ) returned individuals with higher fitness scores.  The individual with best fitness value has 73 users in the Fish scenario, 17 users in the Dogs scenario, 50 users in the Cart scenario, 33 Users in the Register scenario  and a response time of 357 seconds. 
 
 \subsection{Threats to validity}
 
-In this work, we just evaluate the use of one multiobjective algorithm. However, several multiobjective algorithms could be applied.  There is still a reasonable distance between the Pareto frontier and the data obtained for the second objective, and more experiments are needed to validate the results.
+In this work, we just evaluate the use of single objective algorithm. However, several multiobjective algorithms could be applied.  The experiments are performed with the configuration obtained by the irace algorithm, however new experiments are required to verify the sensitivity of the results. It is necessary to compare the current approach with the constraint programming approaches presented in the state of art.
 
 
 
 \section{Conclusion}
 
-Two experiments were conducted to validate the proposed approach. The experiments use genetic algorithms, tabu search, simulated annealing and an hybrid approach proposed by Gois et al. \citep{Gois2016}.
-
-The experiments ran for 17 generations. The experiments used an initial population of 4 individuals by metaheuristics. All tests in the experiment were conducted without the need of a tester, automating the execution of stress tests with the JMeter tool.
-
-In both experiments the HybridQ algorithm returned individuals with higher fitness scores.  In the first experiment the metaheuristics converged to scenarios with a happy path, excluding the scenarios with the use of an antipatterns. The individual with the best fitness value has 64 users in the Happy Scenario 2, 81 users in the Happy Scenario 1 and a response time of 12 seconds. None of the best individuals have one of the antipatterns used in the experiment.
-
-
-In the second experiment, HybridQ found the individuals with a greater number of users. The scenario with greater number of users is the Fish search feature. The hybrid metaheuristic with Q-Learning (HybridQ) returned individuals with higher fitness scores.  The individual with the best fitness value has 73 users in the Fish scenario, 17 users in the Dogs scenario, 50 users in the Cart scenario, 33 Users in the Register scenario  and a response time of 357 seconds. The use of HybridQ allowed the increase of more than 83 users when compared to the tests of isolated scenarios where a maximum of 90 users was achieved.
-
-
-There is a range of future improvements in the proposed approach:
+The present study extends the article "Improving stress search based testing using a hybrid metaheuristic approach" in order to ascertain if the use of the Q-learning technique allows the meta-heuristic algorithms to improve the search for application failures One experiment was conducted to validate the proposed approach. The experiments use genetic algorithms, tabu search, simulated annealing, the Hybrid approach proposed by Gois et al. \citep{Gois2016} and the HybridQ algorithm. The experiment ran for 17 generations. The experiment used an initial population of 5 individuals by metaheuristics. All tests in the experiment were conducted without the need of a tester, automating the execution of stress tests with the JMeter tool.  HybridQ found the individuals with a greater response time. The scenario with greater fitness has 38 users with the Search Page, Add to Cart feature, Removing Item and Main Page features. GA is the algorithm that obtain the best fitness value with minor number of requests. There is a range of future improvements in the proposed approach:
 
 \begin{itemize}
 \item Also as a typical search strategy, it is difficult to ensure that the execution times generated in the experiments represent global optimum. 
@@ -976,18 +900,10 @@ Not applicable
 
 
 \begin{figure}
-\begin{minipage}{.5\textwidth}
-\centering
-\includegraphics{./images/mdp1.png}
-\caption{Example of a simple MDP with three states and two actions}
-\label{fig:mdp}
-\end{minipage}
-\begin{minipage}{.5\textwidth}
 \centering
 \includegraphics{./images/qalgo.png}
 \caption{Q Learning algorithm}
 \label{fig:qalgo}
-\end{minipage}
 \end{figure}
 
 
@@ -1029,120 +945,15 @@ Not applicable
 \end{minipage}
 \end{figure}
 
-
-\begin{figure}[h]
-\begin{minipage}{.5\textwidth}
-\centering
-\includegraphics{./images/experiment1-1.png}
-\caption{Fitness value obtained by Search Method }
-\label{fig:fitnessbygeneration1}
-\end{minipage}
-\begin{minipage}{.5\textwidth}
-\centering
-\includegraphics{./images/experiment1-3.png}
-\caption{Number of requests by Search Method}
-\label{fig:numberofrequestsbysearchmethod}
-\end{minipage}
-\end{figure}
-
-
-\begin{figure}[h!]
-\begin{minipage}{.5\textwidth}
-\centering
-\includegraphics{./images/circuit.png}
-\caption{Circuitous
-Treasure Hunt sample \citep{Vetoio2011}}
-\label{fig:circuit}
-\end{minipage}
-\begin{minipage}{.5\textwidth}
-\centering
-\includegraphics{./images/ramp.png}
-\caption{The Ramp sample \citep{Vetoio2011}.}
-\label{fig:ramp}
-\end{minipage}
-\end{figure}
-
-
-\begin{figure}[h!]
-\centering
-\includegraphics{./images/experiment1-4.png}
-\caption{Average, median, maximum and minimal fitness value by Search Method}
-\label{fig:boxplot1}
-\end{figure}
-
-\begin{figure}[h!]
-\begin{minipage}{.5\textwidth}
-\centering
-\includegraphics{./images/experiment1-5.png}
-\caption{Fitness value by generation}
-\label{fig:summaryboxplot1}
-\end{minipage}
-\begin{minipage}{.5\textwidth}
-\centering
-\includegraphics{./images/experiment1-6.png}
-\caption{Density graph of number of users by fitness value}
-\label{fig:density1}
-\end{minipage}
-\end{figure}
-
-\begin{figure}[h!]
-\centering
-\includegraphics{./images/experiment1-7.png}
-\caption{Response time by the number of users of individuals with Happy Scenario 1 and Happy Scenario 2}
-\label{fig:responsetimegenerationalltests1}
-\end{figure}
 \begin{figure}[h]
 \centering
-\includegraphics{./images/mdpexperiment.png}
-\caption{Markov decision process of experiment with Circuitous Treasure and The Ramp antipatterns}
-\label{fig:mdpexperiment1}
+\includegraphics{./images/experiment1.png}
+\caption{Maximum fitness value by number of requests}
+\label{fig:experiment1}
 \end{figure}
 
-\begin{figure}[h]
-\begin{minipage}{.5\textwidth}
-\centering
-\includegraphics{./images/SearchSurface.png}
-\caption{Response time of individuals found in the experiment by search method}
-\label{fig:surface}
-\end{minipage}
-\begin{minipage}{.5\textwidth}
-\centering
-\includegraphics{./images/searchsurface2.png}
-\caption{Response time of individuals found in the experiment by fitness value}
-\label{fig:surface2}
-\end{minipage}
-\end{figure}
 
-\begin{figure}[h]
-\begin{minipage}{.5\textwidth}
-\centering
-\includegraphics{./images/experiment3-1.png}
-\caption{Fitness value by generation on JPetStore First experiment}
-\label{fig:experiment31}
-\end{minipage}
-\begin{minipage}{.5\textwidth}
-\centering
-\includegraphics{./images/experiment3-2.png}
-\caption{Fitness value by generation on JPetStore First experiment}
-\label{fig:experiment32}
-\end{minipage}
-\end{figure}
 
-\begin{figure}[h]
-\begin{minipage}{.5\textwidth}
-\centering
-\includegraphics{./images/experiment3-3.png}
-\caption{Number of requests by Search Method}
-\label{fig:numberofrequestsbysearchmethod3}
-\end{minipage}
-\begin{minipage}{.5\textwidth}
-\centering
-\includegraphics{./images/experiment3-4.png}
-\caption{Fitness value by generation in all tests}
-\label{fig:boxplot3}
-\end{minipage}
-
-\end{figure}
 
 \end{backmatter}
 \end{document}
