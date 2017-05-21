@@ -1,0 +1,956 @@
+%% BioMed_Central_Tex_Template_v1.06
+%%                                      %
+%  bmc_article.tex            ver: 1.06 %
+%                                       %
+
+%%IMPORTANT: do not delete the first line of this template
+%%It must be present to enable the BMC Submission system to
+%%recognise this template!!
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%                                     %%
+%%  LaTeX template for BioMed Central  %%
+%%     journal article submissions     %%
+%%                                     %%
+%%          <8 June 2012>              %%
+%%                                     %%
+%%                                     %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%                                                                 %%
+%% For instructions on how to fill out this Tex template           %%
+%% document please refer to Readme.html and the instructions for   %%
+%% authors page on the biomed central website                      %%
+%% http://www.biomedcentral.com/info/authors/                      %%
+%%                                                                 %%
+%% Please do not use \input{...} to include other tex files.       %%
+%% Submit your LaTeX manuscript as one .tex document.              %%
+%%                                                                 %%
+%% All additional figures and files should be attached             %%
+%% separately and not embedded in the \TeX\ document itself.       %%
+%%                                                                 %%
+%% BioMed Central currently use the MikTex distribution of         %%
+%% TeX for Windows) of TeX and LaTeX.  This is available from      %%
+%% http://www.miktex.org                                           %%
+%%                                                                 %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%% additional documentclass options:
+%  [doublespacing]
+%  [linenumbers]   - put the line numbers on margins
+
+%%% loading packages, author definitions
+
+%\documentclass[twocolumn]{bmcart}% uncomment this for twocolumn layout and comment line below
+\documentclass{bmcart}
+
+%%% Load packages
+%\usepackage{amsthm,amsmath}
+%\RequirePackage{natbib}
+%\RequirePackage[authoryear]{natbib}% uncomment this for author-year bibliography
+%\RequirePackage{hyperref}
+\usepackage[utf8]{inputenc} %unicode support
+%\usepackage[applemac]{inputenc} %applemac support if unicode package fails
+%\usepackage[latin1]{inputenc} %UNIX support if unicode package fails
+\usepackage{graphicx}
+
+%% These have been added at the request of the MIT Libraries, because
+%% some PDF conversions mess up the ligatures.  -LB, 1/22/2014
+\usepackage{cmap}
+\usepackage[T1]{fontenc}
+\pagestyle{plain}
+
+\usepackage{graphicx}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc} 
+%\usepackage[latin1]{inputenc}
+\usepackage{pifont} 
+\usepackage{import}
+\usepackage{amsmath}
+\usepackage{multirow}
+\usepackage{graphicx,url}
+\usepackage{placeins}
+\usepackage{adjustbox}
+\usepackage[english]{babel}
+\usepackage{lipsum}
+\usepackage{multicol}
+\usepackage{textcomp}
+\usepackage{listings}
+\usepackage{caption}
+\usepackage{amsmath}
+\usepackage{calc} 
+\usepackage{array,url,kantlipsum}
+\usepackage{algorithm}
+\usepackage{algpseudocode}
+\usepackage{lscape}
+\usepackage{array}
+\usepackage{natbib}
+\usepackage{longtable}
+\usepackage{booktabs}
+\usepackage{txfonts}
+\usepackage{colortbl}%
+  \newcommand{\myrowcolour}{\rowcolor[gray]{0.925}}
+\newenvironment{Figure}
+  {\par\medskip\noindent\minipage{\linewidth}}
+  {\endminipage\par\medskip}
+  
+\lstset{
+language=Java,
+basicstyle=\small\ttfamily,
+numbers=left,
+numbersep=5pt,
+xleftmargin=20pt,
+frame=tb,
+framexleftmargin=20pt
+}
+
+\renewcommand*\thelstnumber{\arabic{lstnumber}:}
+
+\DeclareCaptionFormat{mylst}{\hrule#1#2#3}
+\captionsetup[lstlisting]{format=mylst,labelfont=bf,singlelinecheck=off,labelsep=space,font={normalsize,tt}}
+
+\usepackage[framemethod=tikz]{mdframed}
+\usepackage{lipsum}
+
+\extrafloats{100}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%                                             %%
+%%  If you wish to display your graphics for   %%
+%%  your own use using includegraphic or       %%
+%%  includegraphics, then comment out the      %%
+%%  following two lines of code.               %%
+%%  NB: These line *must* be included when     %%
+%%  submitting to BMC.                         %%
+%%  All figure files must be submitted as      %%
+%%  separate graphics through the BMC          %%
+%%  submission process, not included in the    %%
+%%  submitted article.                         %%
+%%                                             %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\def\includegraphic{}
+\def\includegraphics{}
+
+
+
+%%% Put your definitions there:
+\startlocaldefs
+\endlocaldefs
+
+
+%%% Begin ...
+\begin{document}
+
+%%% Start of article front matter
+\begin{frontmatter}
+
+\begin{fmbox}
+\dochead{Research}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%                                          %%
+%% Enter the title of your article here     %%
+%%                                          %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\title{Improving Search-Based Stress Testing Using Q-Learning and a Hybrid Metaheuristic Approach}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%                                          %%
+%% Enter the authors here                   %%
+%%                                          %%
+%% Specify information, if available,       %%
+%% in the form:                             %%
+%%   <key>={<id1>,<id2>}                    %%
+%%   <key>=                                 %%
+%% Comment or delete the keys which are     %%
+%% not used. Repeat \author command as much %%
+%% as required.                             %%
+%%                                          %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\author[
+   addressref={aff1},                   % id's of addresses, e.g. {aff1,aff2}
+   corref={aff1},                       % id of corresponding address, if any
+   noteref={n1},                        % id's of article notes, if any
+   email={naubergois@gmail.com}   % email address
+]{\inits{NG}\fnm{Nauber} \snm{Gois}}
+\author[
+   addressref={aff1},
+   email={porfirio@unifor.br}
+]{\inits{PP}\fnm{Pedro} \snm{Porfírio}}
+\author[
+   addressref={aff1},
+   email={acoelho@unifor.br}
+]{\inits{AC}\fnm{André} \snm{Coelho}}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%                                          %%
+%% Enter the authors' addresses here        %%
+%%                                          %%
+%% Repeat \address commands as much as      %%
+%% required.                                %%
+%%                                          %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\address[id=aff1]{%                           % unique id
+  \orgname{Departamento de Informática Aplicada, UNIFOR}, % university, etc
+  \street{Av. Washington Soares, 1321},                     %
+  %\postcode{}                                % post or zip code
+  \city{Fortaleza},                              % city
+  \cny{BR}                                    % country
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%                                          %%
+%% Enter short notes here                   %%
+%%                                          %%
+%% Short notes will be after addresses      %%
+%% on first page.                           %%
+%%                                          %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{artnotes}
+%\note{Sample of title note}     % note to the article
+\note[id=n1]{Equal contributor} % note, connected to author
+\end{artnotes}
+
+\end{fmbox}% comment this for two column layout
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%                                          %%
+%% The Abstract begins here                 %%
+%%                                          %%
+%% Please refer to the Instructions for     %%
+%% authors on http://www.biomedcentral.com  %%
+%% and include the section headings         %%
+%% accordingly for your article type.       %%
+%%                                          %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{abstractbox}
+
+\begin{abstract} 
+Some software systems must respond to thousands or millions of concurrent requests. These systems must be properly tested to ensure that they can function correctly under the expected load. Performance degradation and consequent system failures usually arise in stressed conditions. Stress testing subjects the program to heavy loads. In this context, search-based testing is seen as a promising approach to verify timing constraints. The goal of this research was to use a reinforcement learning technique to optimize the choice of neighboring solutions to explore, reducing the time needed to obtain the scenarios with the longest response time in the application. A tool named IAdapter, a JMeter plugin used for performing search-based stress tests, was extended. One experiment was conducted. The experiment reveal that the best solutions found by the new Hybrid q-learning approach were on average 5.98\% better than that achieved by our previous hybrid approach without q-learning. The HybridQ algorithm consuming the same amount of time; however, it needs a much greater number of requests than that needed by other algorithms.
+\end{abstract}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%                                          %%
+%% The keywords begin here                  %%
+%%                                          %%
+%% Put each keyword in separate \kwd{}.     %%
+%%                                          %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{keyword}
+\kwd{Search-Based Test}
+\kwd{Stress Testing}
+\kwd{Hybrid metaheuristic}
+\kwd{Q-Learning}
+\end{keyword}
+
+% MSC classifications codes, if any
+%\begin{keyword}[class=AMS]
+%\kwd[Primary ]{}
+%\kwd{}
+%\kwd[; secondary ]{}
+%\end{keyword}
+
+\end{abstractbox}
+%
+%\end{fmbox}% uncomment this for twcolumn layout
+
+\end{frontmatter}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%                                          %%
+%% The Main Body begins here                %%
+%%                                          %%
+%% Please refer to the instructions for     %%
+%% authors on:                              %%
+%% http://www.biomedcentral.com/info/authors%%
+%% and include the section headings         %%
+%% accordingly for your article type.       %%
+%%                                          %%
+%% See the Results and Discussion section   %%
+%% for details on how to create sub-sections%%
+%%                                          %%
+%% use \cite{...} to cite references        %%
+%%  \cite{koon} and                         %%
+%%  \cite{oreg,khar,zvai,xjon,schn,pond}    %%
+%%  \nocite{smith,marg,hunn,advi,koha,mouse}%%
+%%                                          %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%% start of article main body
+% <put your article body there>
+
+%%%%%%%%%%%%%%%%
+%% Background %%
+%%
+
+\section{Introduction}
+
+Many systems must support concurrent access to hundreds or thousands of users. Failure to provide scalable access to users may result in catastrophic failures and unfavorable media coverage \citep{Jiang2010}. 
+
+The explosive growth of the Internet has contributed to the increased need for applications that perform at an appropriate speed. Performance problems are often detected late in the application life cycle, and the later they are discovered, the greater the cost is to fix them \citep{Molyneaux2009}.
+
+The use of stress testing is an increasingly common practice owing to the increasing number of users. In this scenario, the inadequate treatment of a workload generated by the concurrent or simultaneous access by several users can result in highly critical failures and negatively affect the customer's perception of the company \citep{Draheim2006b} \citep{Jiang2010}. 
+
+Stress testing determines the responsiveness, throughput, reliability, or scalability of a system under a given workload. The quality of the results of applying a given load testing to a system is closely linked to the implementation of the workload strategy. The performance of many applications depends on the load applied under different conditions. In some cases, performance degradation and failures arise only in stress conditions \citep{Garousi2010} \citep{Jiang2010}.
+
+
+A stress test uses a set of workloads that consist of many types of usage scenarios and a combination of different numbers of users. A load is typically based on an operational profile. Different parts of an application should be tested under various parameters and stress conditions \citep{Babbar2011}. The correct application of a stress test should cover most parts of an application above the expected load conditions \citep{Draheim2006b}.
+
+The stress testing process in the industry still follows a non-automated and ad hoc model wherein the designer or tester is responsible for running the tests, analyzing the results, and deciding which new tests should be performed \citep{Lewis2005}. 
+
+Typically, commercially available load test tools use test scripts, which are programs that test designers write to automate testing. These test scripts perform actions or mimic user actions on GUI objects of the system to feed input data. Current approaches to stress testing suffer from certain limitations. Their cost-effectiveness is highly dependent on the particular test scenarios that are used, and yet there is no support for choosing those scenarios. A poor choice of scenarios could lead to underestimating the system response time, thereby missing an opportunity to detect a performance problem \citep{Grechanik2012}.
+
+Search-based testing is seen as a promising approach to verify timing constraints \citep{Afzal2009a}. A common objective of a stress search-based test is to find scenarios that produce execution times that violate the specified timing constraints \citep{Sullivan}. 
+
+
+Stress tests need to occur within a delimited period in a software development project. The test period of a software can last from a few days to months, depending on the project schedule. During the test period, the tests need to find the highest number of application failures while consuming as little time as possible. Most research studies use search-based techniques to find the best- or worst-case test workloads. The presented research work is distinguished from others by improving the choice of neighboring solutions, thus reducing the time needed to obtain the scenarios with the longest response time in the application. 
+
+The present study extends the article ``Improving stress search based testing using a hybrid metaheuristic approach''  \citep{Gois2016} to ascertain if the use of the Q-learning technique allows meta-heuristic algorithms to improve the search for application failures with a smaller number of requests while consuming a shorter amount of time, assuming that the same application can be submitted to more than one test execution. This paper addresses the following research question:
+
+\begin{itemize}
+\item Could the Q-learning technique be used to improve the choice of neighboring solutions, thus improving the number of requests and the time needed to find scenarios with the longest response time in the application under test?
+\end{itemize}
+
+The main contribution of this study is that it proposes the use of the Q-learning technique in the choice of neighboring solutions. One experiment was conducted to validate the proposed approach. The experiment was performed using an installed OpenCart application.
+
+The remainder of the paper is organized as follows. The next section gives a background on metaheuristic, search-based stress testing and the Q-learning technique. Section 3 presents the related works to this study. Section 4 presents the hybrid approach proposed by Gois et al. \citep{Gois2016}. Section 5 presents the proposed solution. Section 6 shows the results of the experiment performed using the HybridQ algorithm.  Conclusions and further work are presented in Section 7.
+
+\section{Background}
+
+In computer science, ``metaheuristic'' is an accepted term for general techniques that are not specific to a particular problem. A metaheuristic is formally defined as an iterative generation process that guides a subordinate heuristic by combining intelligently different concepts for exploring and exploiting the search space \citep{raidl2010metaheuristic}. 
+
+Metaheuristics are strategies that guide the search process to efficiently explore the search space to find optimal solutions. Metaheuristic algorithms are approximate and usually non-deterministic and sometimes incorporate mechanisms to avoid getting trapped in confined areas of the search space. 
+
+
+Several papers advocate the use of search-based algorithms as a good solution to generate good test cases, given the combinatorial nature of a software test \citep{pargas1999test} \citep{berndt2004investigating} \citep{baudry2005automatic} \citep{baudry2002genes} \citep{watkins2004breeding} \citep{perumal2011test} \citep{berndt2005high}. Search-based software testing (SBST) is the process of automatically generating tests according to a test adequacy criterion using search-based optimization algorithms, which are guided by an objective fitness function. The role of the fitness function is to capture a test objective that, when achieved, makes a contribution to the desired test adequacy criterion. SBST commonly uses metaheuristics as the search algorithm \citep{Harman2010}.
+
+Simulated annealing (SA) is a metaheuristic algorithm that tries to avoid being trapped in local optimal solutions by assigning probabilities to deteriorating moves. The SA procedure is inspired by the annealing process of solids. SA is based on a physical
+process in the metallurgy discipline or in solid matter physics. Annealing is the process of obtaining the low-energy states of a solid in heat treatment \citep{Jaziri2008}. Tabu search (TS) is a metaheuristic that guides a local heuristic search procedure to explore the solution space beyond the local optimal and search with short-term memory to avoid cycles. It uses a tabu list to keep track of the last  moves and to prevent retracing \citep{Glover1986}.
+
+Genetic algorithms (GAs) are a metaheuristic algorithm based on concepts adopted from genetic and evolutionary theories. GAs consist of several components \citep{hong2000simultaneously} \citep{shousha2003performance}:
+
+\begin{itemize}
+\item a representation of the solution, referred to as the chromosome;
+\item the fitness of each chromosome, referred to as the objective function; and
+\item the genetic operations of crossover and mutation, which generate new offspring. 
+\end{itemize}
+
+The crossover or recombination operation combines two or more individuals to produce new individuals. Mutation or modification operators lead to self-adaptation of individuals \cite{Blum2003}. In search-based tests, the crossover operation creates two new test cases, namely, T1' and T2', by combining test cases from two pre-existing test cases: T1 and T2 \cite{Aleti2016}. Algorithm \ref{gna} shows the basic structure of GA algorithms. In this algorithm, P denotes the population of individuals. A population of offspring is generated by the application of recombination and mutation operations, and the individuals for the next population are selected from the union of the old population and the offspring population \citep{raidl2010metaheuristic}.
+
+
+\begin{algorithm}[h]
+  \caption{Genetic Algorithm}\label{gna}
+  \begin{algorithmic}[1]
+    
+    \State $s\gets GenerateInitialSolution()$
+    \State Evaluate(P)
+    \While{termination conditions not met }
+    \State $\mbox{P}_1\gets$ $Recombine(P)$
+    \State $\mbox{P}_2\gets$ $Mutate(\mbox{P}_1)$ 
+    \State $Evaluate(\mbox{P}_2)$
+    \State $P\gets Select(\mbox{P}_2,P)$
+    \EndWhile
+      
+  \end{algorithmic}
+\end{algorithm}
+
+A combination of one metaheuristic with components from other metaheuristics is called a hybrid metaheuristic. The concept of hybrid metaheuristics, which combine different metaheuristic strategies and algorithms, dates back to the 1980s. Today, we can observe a generalized common agreement on the advantage of combining components from different search techniques, and the tendency of designing hybrid techniques is widespread in the fields of operations research and artificial intelligence \citep{raidl2010metaheuristic}. 
+
+
+This paper addresses the use of hybrid metaheuristics in conjunction with reinforcement learning (RL) techniques in search-based tests. RL refers to both a learning problem and a subfield of machine learning. As a learning problem, it refers to learning to control a system to maximize some numerical value that represents a long-term objective. The basic idea of RL  is simply to capture the most important aspects of the real problem faced by a learning agent interacting with its environment to achieve a goal \citep{Sutton2012}. RL is learning what to do--–how to map situations to actions–--to maximize a numerical reward signal. The learner needs to discover which actions yield the most reward by trying them \citep{Sutton2012}.
+
+In RL, an agent wanders in an unknown environment and tries to maximize its long-term return by performing actions and receiving rewards. The challenge is to understand how a current action will affect future rewards. A good way to model this task is with Markov decision processes (MDPs). MDPs provide a mathematical framework for modeling decision making. In RL, all agents act in two phases: exploration vs. exploitation. In the exploration phase, the agents try to discover better action selections to improve their knowledge. In the exploitation phase, the agents try to maximize their reward on the basis of what is already known.
+
+One of the challenges that arise from RL is the trade-off between exploration and exploitation. To obtain a large reward, an RL
+agent must prefer actions that it has tried in the past and found to be effective in producing a reward. However, to discover such actions, it has to try actions that it has not selected before. The agent has to exploit what it already knows to obtain a reward, but it also has to explore to make better action selections in the future.
+
+Q-learning is a model-free RL technique. It is a multi-agent learning algorithm that learns equilibrium policies in Markov games, just as it learns to optimize policies in MDPs \citep{Greenwald2003}. 
+
+Q-learning and related algorithms try to learn the optimal policy from its history of interaction with the environment. The history of an agent is a sequence of state-action-rewards:
+
+\begin{equation}
+<s_{0},a_{0},r_{1},s_{1},a_{1},r_{2},s_{2},a_{2},r_{3},s_{3},a_{3},r_{4},s_{4}....>,
+\end{equation}
+
+where $s_{n}$ is a state, $a_{n}$ is an action, and $r_{n}$ is a reward.
+
+In Q-learning, the system's objective is to learn a control policy $\pi = \sum_{n=0}^{\infty} \gamma\textsuperscript{n}  r_{t}+n $, where $\pi$  is the discounted cumulative reward, $\gamma$ is the discount rate ($01$), and $r_{t}$ is the reward received after the execution of an action at time $t$. Figure \ref{fig:qalgo} shows a summary version of the Q-learning algorithm. The first step is to generate the initial state of the MDP. The second step is to choose the best action or a random action based on the reward; hence, the actions with the best rewards are chosen.
+
+
+
+\section{Related Works}
+
+The search for the longest execution time is regarded as a discontinuous, nonlinear, optimization problem, with the input domain of the system under test as a search space \citep{Sullivan}.  The use of search-based tests in stress tests is adequate because of the large number of combinations of scenarios involved and the limited period of time for testing. Only incrementing the number of users in a single chosen scenario may not be appropriate because there may be errors that involve the use of more than one scenario simultaneously. The application of SBST algorithms for stress tests involves finding the best- and worst-case execution times (BCET and WCET, respectively) to determine whether the timing constraints are fulfilled \citep{Afzal2009a}. 
+
+There is a great difficulty in comparing the present work with some of the approaches presented in the state of the art owing to the unavailability of the tools used by each research.  The present work intends to compare the proposed solution with other methods based on the use of single metaheuristics (namely, GAs, SA, and TS) and with an alternative hybrid approach that is based on the use of GAs jointly with constraint programming (CP).
+
+In this section, the studies will be categorized by the unit of measure commonly used in fitness functions, the stage of development of the solution available, and the search approach used  by each research study. There are two measurement units normally associated with the fitness function in a stress test: processor cycles and execution time. The processor-cycle approach describes a fitness function in terms of processor cycles. The execution-time approach involves executing the application under test and measuring the execution time \citep{Afzal2009a} \citep{tracey2000search}.
+
+Processor cycle measurement is deterministic in the sense that it is independent of the system load and results in the same execution times for the same set of input parameters. However, such a measurement is dependent on the compiler and optimizer used; therefore, the processor cycles differ for each platform. Execution time measurement is a nondeterministic approach; there is no guarantee of getting the same results for the same test inputs \citep{Afzal2009a}.  However, stress testing wherein testers have no access to the production environment should be measured by the execution time measurement \citep{Molyneaux2009} \citep{Afzal2009a}.
+
+The solutions presented in the selected papers were classified into prototype or functional tool categories. A prototype is a draft version of a product that allows showing the intention behind a feature. A functional tool has all the features completely developed and a GUI interface that the end user can navigate. Table \ref{tab:comparison}  shows a comparison between the research studies on load, performance, and stress tests. The columns represent the type of tool used (prototype or functional tool), and the rows represent the metaheuristic approach used by each research study (GA, TS, SA, or a customized algorithm). The table also sorts the research studies by the type of fitness function used (execution time or processor cycles). 
+
+
+\begin{table}[h]
+\centering
+\caption{Distribution of the research studies over the range of applied metaheuristics}
+\label{tab:comparison}
+\begin{tabular}{p{2.4cm}|p{3.8cm}|p{3.8cm}|p{3.0cm}|}
+\cline{2-4}
+                                                                & \multicolumn{2}{c|}{\textbf{Prototypes}}            & \textbf{Functional Tool} \\ \cline{2-4} 
+                                                                & \begin{minipage}{0.2\textwidth}\footnotesize Execution Time  \end{minipage}          & \begin{minipage}{0.2\textwidth}\footnotesize Processor Cycles \end{minipage}        & \begin{minipage}{0.2\textwidth}\footnotesize Execution Time \end{minipage}           \\ \cline{2-4} 
+%\setlength{\extrarowheight}{20pt}
+\begin{tabular}[c]{@{}l@{}}\begin{minipage}{0.3\textwidth}\small GA + SA + Tabu \\ Search\\ +Q-Learning \\ \\ \end{minipage}\end{tabular}  & \cellcolor[HTML]{FFFFFF} & \cellcolor[HTML]{FFFFFF} & \cellcolor[HTML]{FFFFFF} \begin{minipage}{0.2\textwidth}  \cellcolor{blue!25} \small Our approach  \end{minipage}  \\[2ex] \cline{2-4} 
+\begin{tabular}[c]{@{}l@{}}\begin{minipage}{0.3\textwidth}\small GA + SA + Tabu \\ Search \end{minipage}\end{tabular}  & \cellcolor[HTML]{FFFFFF} & \cellcolor[HTML]{FFFFFF} & \cellcolor[HTML]{FFFFFF} \begin{minipage}{0.3\textwidth} \small Gois et al., 2016 \citep{Gois2016}  \end{minipage}  \\[2ex] \cline{2-4} 
+\begin{minipage}{0.1\textwidth}\small GA \end{minipage}                                                              & \cellcolor[HTML]{FFFFFF} \begin{minipage}{0.3\textwidth}   \small \textnormal{ \\  Alander et al., 1998 \citep{Alander} \\ Wegener et al., 1996 and 1997 \citep{Wegener1997}\citep{J.WegenerK.GrimmM.GrochtmannH.Sthamer1996} \\  Sullivan et al., 1998 \citep{Sullivan} \\ Briand et al., 2005 \citep{Briand2005} \\ Canfora et al., 2005 \citep{Canfora}  \\ }\end{minipage} & \cellcolor[HTML]{FFFFFF} \begin{minipage}{0.3\textwidth} \small \textrm{  \\ Wegener and Grochtmann, 1998 \citep{Wegener1998} \\  Mueller et al., 1998 \citep{Mueller1998} \\ Puschner et al. \citep{Puschner1998} \\ Wegener et al., 2000 \citep{Stations} \\ Gro et al., 2000 \citep{Gross2000}  \\ }\end{minipage}& \cellcolor[HTML]{FFFFFF} \begin{minipage}{0.22\textwidth}   \small \textnormal{ \\  Di Penta et al., 2007 \citep{Penta2007} \\ Garoussi, 2006 \citep{Garousi2006} \\ Garousi, 2008 \citep{Garousi2008} \\ Garousi, 2010 \citep{Garousi2010} \\ } \end{minipage} \\[2ex] \cline{2-4} 
+\begin{minipage}{0.1\textwidth}\small Simulated \\ Annealing \\ (SA) \end{minipage}                                                             & \cellcolor[HTML]{FFFFFF} & \cellcolor[HTML]{FFFFFF} & \cellcolor[HTML]{FFFFFF} \begin{minipage}{0.3\textwidth}   \small  Tracey, 1998 \citep{Tracey1998} \end{minipage} \\[2ex] \cline{2-4}
+\begin{minipage}{0.1\textwidth}\small  Constraint \\ Programming \end{minipage}                                                             & \cellcolor[HTML]{FFFFFF} & \cellcolor[HTML]{FFFFFF} & \cellcolor[HTML]{FFFFFF} \begin{minipage}{0.3\textwidth}   \small  Di Alesio et al., 2014 \citep{DiAlesio2014} \\ Di Alesio et al., 2013 \citep{DiAlesio2013}  \end{minipage} \\[2ex] \cline{2-4} 
+\begin{minipage}{0.1\textwidth}\small  GA +\\ Constraint \\ Programming \end{minipage}                                                             & \cellcolor[HTML]{FFFFFF} & \cellcolor[HTML]{FFFFFF} & \cellcolor[HTML]{FFFFFF} \begin{minipage}{0.3\textwidth}   \small  Di Alesio et al., 2015 \citep{Alesio2015} \end{minipage} \\[2ex] \cline{2-4} 
+\setlength{\extrarowheight}{20pt}
+\begin{tabular}[c]{@{}l@{}}
+\begin{minipage}{0.1\textwidth}\small Customized \\ Algorithm \end{minipage}\end{tabular} & \cellcolor[HTML]{FFFFFF} & \cellcolor[HTML]{FFFFFF}  \begin{minipage}{0.3\textwidth}   \small  \textnormal{   \raggedleft Pohlheim, 1999 \citep{Pohlheim2005}  } \end{minipage} & \cellcolor[HTML]{FFFFFF} \\[4ex] \cline{2-4}
+\end{tabular}
+\end{table}
+
+
+The studies can be grouped into two main groups:
+
+\begin{itemize}
+\item Search-based stress testing on safety-critical systems.
+\item Search-based stress testing on non-safety-critical systems.
+\end{itemize}
+
+Safety-critical systems are real-time systems or critical mission systems such as medical treatment systems or aeronautical or automotive control systems. All other systems are in the non-safety-critical systems category.
+
+\subsection{Search-based stress testing on safety-critical systems}
+
+Search-based tests have great importance in domains such as avionics, automotive, and aerospace that feature safety-critical systems, whose failure could result in catastrophic consequences.  The importance
+of software in such systems is permanently increasing owing to the need for a higher system
+flexibility. For this reason, the software components of these systems are usually subject to safety certification. In this context, software safety certification has to take into account the performance requirements, which specify the constraints on how the system should react to its environment and how it should execute on its hardware platform \citep{DiAlesio2013}.
+
+Usually, embedded computer systems have to fulfill real-time requirements. A faultless function of the systems depends not only on their logical correctness but also on their temporal correctness. Dynamic aspects such as the duration of computations, the memory actually needed during program execution, or the synchronization of parallel processes are of major importance for the correct function of real-time systems  \citep{J.WegenerK.GrimmM.GrochtmannH.Sthamer1996} .
+
+The concurrent nature of some embedded software often makes unpredictable the order of external events triggering the systems tasks. Such an increase in software complexity renders performance analysis and testing increasingly challenging \citep{DiAlesio2013}.
+
+Reactive real-time systems must react to external events within the time constraints. Triggered tasks must execute within the deadlines. Shousha developed a methodology for the derivation of test cases that aims at maximizing the chance of critical deadline misses \citep{shousha2003performance}. 
+
+The main goal of search-based stress testing of safety-critical systems is to find a combination of inputs that cause the system to delay task completion to the greatest possible extent \citep{shousha2003performance}. The followed approaches use metaheuristics to discover the worst-case execution times. 
+
+Wegener et al. \citep{Wegener1997} used GAs to search for input situations that produce very long or very short execution times. The fitness function used was the execution time of an individual measured in microseconds \citep{Wegener1997}. Alander et al. \citep{Alander} performed experiments in a simulator environment to measure the response time extremes of protection relay software using GAs. The fitness function used was the response time of the tested software. The results showed that GA generated more input cases with longer response times \citep{Alander}. 
+
+Wegener and Grochtmann performed an  experiment
+to compare GA with random testing. The fitness function used was the duration of the execution measured in processor cycles.  The results showed that, with a large number of input parameters, GA obtained more extreme execution times with less or equal testing effort than those obtained by random testing \citep{J.WegenerK.GrimmM.GrochtmannH.Sthamer1996} \citep{Wegener1998}.
+
+
+Gro et al. \citep{Gross2000} presented a prediction model  that can be used to predict evolutionary testability. The research confirmed that there is a relationship between the complexity of a test object and the ability of a search algorithm to produce input parameters according to the BCET and WCET \citep{Gross2000}. 
+
+Briand et al. \citep{Briand2005} used GA to find the sequence of arrival times of events for aperiodic tasks that would cause the greatest delays in the execution of the target task. A prototype tool named real-time test tool (RTTT) was developed to facilitate the execution of the runs of the GA. Two case studies were conducted, and the results illustrated that RTTT is a useful tool to stress a system under test \citep{Briand2005}.
+
+
+Pohlheim et al. used an extension of GAs with multiple sub-populations, each using a different search strategy. The duration of execution measured in processor cycles was taken as the fitness
+function. The GA found longer execution times for all the given modules in comparison with systematic testing \citep{Pohlheim2005}.
+
+Garousi presented a stress test methodology aimed at increasing the chances of discovering faults related to distributed traffic in distributed systems. The technique uses a specified UML 2.0 model as an input of a system, augmented with timing information. The results indicated that the technique is significantly more effective at detecting distributed traffic-related faults when compared to standard test cases based on an operational profile \citep{Garousi2006}.
+
+Di Alesio et al. described an approach based
+on CP to automate the generation of test cases that reveal, or are likely to reveal, task deadline misses. They evaluated it through a comparison with a state-of-the-art approach based on GAs. In particular, the study compared CP and GA in five case studies for efficiency, effectiveness, and scalability. The experimental results showed that, on the largest and most complex case study, CP performed significantly better than GA. The research proposes a tool-supported, efficient, and effective approach based on CP to generate stress test cases that maximize the likelihood of task deadline misses \citep{DiAlesio2013}.
+
+Di Alesio described stress test case generation as a search problem over the space of task arrival times. The research searched for worst-case scenarios maximizing deadline misses, where each scenario characterizes a test case. The research combined two strategies, GA and CP. The results showed that, in comparison with GA and CP in isolation, GA+CP achieved nearly the same effectiveness as CP and the same efficiency and solution diversity as GA, thus combining the advantages of the two strategies. Di Alesio concluded that a combined GA+CP approach to stress testing is more likely to scale to large and complex systems \citep{Alesio2015}.
+
+\subsection{Search-based stress testing on non-safety-critical systems}
+
+
+Tracey et al. \citep{Tracey1998} used SA to test four
+simple programs. The results of the research showed that the use of SA was more effective with a larger parameter space. The authors highlighted the need for a detailed comparison of various optimization techniques to explore the WCET and BCET of the system under test \citep{Tracey1998}.
+
+Di Penta et al. \citep{Penta2007} used GA to create test data that violated quality-of-service (QoS) constraints, causing SLA violations. The generated test data included combinations of inputs. The approach was applied to two case studies. The first case study was an audio processing workflow. The second case study, a service that produced charts, applied the black-box approach, with the fitness value calculated only on the basis of how close solutions violate QoS constraints. In the case of the audio workflow, the GA outperformed the random search. For the second case study, the use of the black-box approach successfully violated the response time constraint, showing the violation of QoS constraints for a real service available on the Internet \citep{Penta2007}.
+
+Gois et al. proposed a hybrid metaheuristic approach using GAs, SA algorithm, and TS algorithm to perform stress testing. A tool named IAdapter, a JMeter plugin used for performing search-based stress tests, was developed. Two experiments were performed to validate the solution. In the first experiment, a signed-rank Wilcoxon nonparametric procedure was used for comparing the results. The significance level adopted was 0.05. The procedure showed that there was a significant improvement in the results with the hybrid metaheuristic approach.
+In the second experiment, the whole process of stress and performance tests, which ran for 3 days and about 1800 executions, was carried out without the need for monitoring by a test designer. The tool automatically selected the next scenarios to be run up to the limit of six generations previously established \citep{Gois2016}. 
+
+
+\section{Improving Stress Search-Based Testing Using a Hybrid Metaheuristic Approach}
+
+This section presents the hybrid approach proposed by Gois et al. \citep{Gois2016}. The solution proposed by Gois et al. makes it possible to create a model that evolves during the test. A plugin called IAdapter was implemented for the research. IAdapter is a JMeter plugin designed to perform search-based stress tests. The plugin is available at \url{www.github.com/naubergois/newiadapter}.  
+
+
+The proposed solution model uses GAs, TS, and SA in two different approaches. The current study initially investigated the use of these three algorithms. Subsequently, this paper will focus on other population-based and single-point search metaheuristics. The first approach uses the three algorithms independently, and the second approach uses the three algorithms collaboratively (hybrid metaheuristic approach).
+
+In the first approach, the algorithms do not share their best individuals among themselves. Each algorithm evolves in a separate way (Fig. \ref{fig:firstaproach}). The second approach uses the algorithms in a collaborative mode (hybrid metaheuristic). In this approach, the three algorithms share their best individuals found (Fig. \ref{fig:secondapproach}). The next subsections present the details about the used metaheuristic algorithms (representation, initial population, and fitness function).
+
+
+\subsection{Representation}
+
+The solution representation provides a common representation for all workloads. Each workload is composed of a linear vector with 21 positions (Figure \ref{fig:solution}  -\ding{202}). The first position represents a metadata with the name of an individual. The next positions represent 10 scenarios and their numbers of users (Figure \ref{fig:solution}  -\ding{203}). 
+
+The continuous vector representation was performed in order to simplify the implementation of the JMeter tool. Preliminary experiments were conducted, varying the number of scenarios per subject. From the results of these experiments, we came to the conclusion that 10 would be a reasonable number of scenarios for our purposes. The limit of 21 positions and 10 scenarios was used for the scenarios presented in the experiments but could be calibrated in new versions of the plugin. Each scenario is an atomic operation: the scenario must log into the application, run the task goal, and undo any changes performed, returning the application to its original state. 
+
+Figure \ref{fig:solution} presents the solution representation and an example using the crossover operation. In the example, solution 1 (Figure \ref{fig:solution}  -\ding{204}) has the Login scenario with two users, the Search scenario with four users, the Include scenario with one user, and the Delete scenario with two users.  After the crossover operation with solution 2 (Figure \ref{fig:solution}  -\ding{205}), we obtain a solution with the Login scenario with two users, the Search scenario with four users, the Update scenario with three users, and the Include scenario with five users (Figure \ref{fig:solution}  -\ding{206}). Figure \ref{fig:solution} -\ding{207} shows the strategy used by the proposed solution to  obtain the neighbors for the TS and SA algorithms. The neighbors are obtained by the modification of a single position (scenario or number of users) in the vector.
+
+\subsection{Initial population}
+
+The strategy used by the plugin to instantiate the initial population is to generate 50\% of the individuals randomly, and 50\% of the initial population is distributed into three ranges of values:
+
+\begin{itemize}
+\item Thirty percent of the maximum allowed users in the test;
+\item Sixty percent of the maximum allowed users in the test; and
+\item Ninety percent of the maximum allowed users in the test.
+\end{itemize}
+
+The percentages relate to the distribution of the users in the initial test scenarios of the solution. For example, in a hypothetical test with 100 users, the solution will create initial test scenarios with 30, 60, and 90 users.
+
+\subsection{Objective (fitness) function}
+
+The proposed solution was designed to be used with independent testing teams in various situations, in which the teams have no direct access to the environment where the application under test was installed. Therefore, the IAdapter plugin uses a measurement approach as the definition of the fitness function. The fitness function applied to the IAdapter solution is governed by the following equation:
+
+\begin{equation}
+\begin{aligned}
+fit=numberOfUsersWeight*numberOfUsers\\
+-90percentileweight* 90percentiletime\\
+-80percentileweight*80percentiletime\\
+-70percentileweight*70percentiletime\\
+-maxResponseWeight*maxResponseTime\\
+-penalty
+\end{aligned}
+\end{equation}
+
+The users and response time factors were chosen because they are common units of measurement in load test tools \cite{Molyneaux2009}. The proposed solution's fitness function uses a series of manually adjustable user-defined weights (90percentileweight, 80percentileweight,  70percentileweight, maxResponseWeight, and numberOfUsersWeight). These weights make it possible to customize the search plugin's functionality. A penalty is applied when the response time of an application under test runs longer than the service level. The penalty is calculated by the following equation:
+
+\begin{equation}
+\begin{aligned}
+penalty=100 * \Delta \\
+\Delta=(t_{Current Response Time} - t_{Maximum Response Time Expected})\\
+\end{aligned}
+\end{equation}
+
+
+
+\section{Improving Stress Search-Based Testing Using Q-Learning and a Hybrid Metaheuristic Approach}
+
+
+The goal of this research was to use a RL technique to optimize the choice of neighboring solutions to explore, thus reducing the time needed to obtain the scenarios with the longest response time in the application. The research assumes as premise that the same application under performance tests can be submitted to more than one cycle of tests execution, reducing the cost of the exploration phase of the q-learning algorithm used. 
+
+The solution (i.e., HybridQ) uses the GA, SA, and TS algorithms in a collaborative approach. Just like most RL problems, the proposed solution works in two different phases: exploration and exploitation. The following subsections show the details of the exploration and exploitation phases and the integration between metaheuristics and the Q-learning algorithm.
+
+
+\subsection{Exploration phase}
+
+The exploration phase uses a Markov model, as shown in Fig. \ref{fig:mdphybridq}; the proposed MDP model has three main states based on the response time. A test may have a response time greater than 1.2 times the maximum response time allowed, between 0.8 and 1.2 times the maximum response time allowed, or less than 0.8 times the maximum response time allowed. The values of 1.2 and 0.8 were chosen on the basis of the assumption of a tolerance margin of 20\% for the application under test. This margin may be higher or lower, depending on the business requirements of the application.
+
+The algorithm maintains three different tables (Table \ref{pab:mdp}), one for each state. The selection of which table to use depends on the response time of the application.
+
+\begin{algorithm}[h]
+  \caption{Exploration phase table selection }\label{hybridqexploration}
+  \begin{algorithmic}[1]    
+    \If {responseTime < 0.8 * maxResponseTime }
+    \State return qTableBellowServiceLevel       
+    \EndIf
+     \If {responseTime >= 0.8 * maxResponseTime and responseTime <= 1.2* maxResponseTime}
+    \State return qTableServiceLevel  
+    \EndIf
+    \If {responseTime > 1.2 * maxResponseTime}
+    \State return qTableAboveServiceLevel  
+    \EndIf
+  \end{algorithmic}
+\end{algorithm}
+
+Algorithm \ref{hybridqexploration} shows the main steps of the exploration phase. The possible actions in the MDP are the change in one of the test scenarios and an increase or decrease in the number of users. In line 1, the algorithm chooses a random action (increase, decrease, or maintain the number of users). In line 2, the algorithm chooses a random test scenario. In lines 3 to 7, the algorithm checks if there exists a q value  for the pair (action and test scenario); if none exists, then a zero value is assigned. In line 8, the algorithm checks if the new solution increases the fitness value. A solution receives a positive reward when an action increases the fitness value and a negative reward when an action reduces the fitness value.  Finally, the algorithm updates the qTable with the new q value.
+
+
+\begin{algorithm}[h]
+  \caption{HybridQ exploration phase }\label{hybridqexploration}
+  \begin{algorithmic}[1]    
+    \State $action \gets Random.createAction()$
+    \State $testScenario \gets Random.chooseTestScenario()$
+    \If {qTable.containsKey(action + "\#" + testScenario)}
+    \State $ qValue \gets qTable.get(action + "\#" + testScenario);$
+    \Else
+        \State $ qValue \gets 0$
+    \EndIf
+     \If {newSolution.getFitness() > oldSolution.getFitness()}
+     \State $qValue \gets ReinforcementLearning.alpha * reward + (1 - ReinforcementLearning.alpha) * qValue$     
+     \Else
+          \State $qValue \gets ReinforcementLearning.alpha * -reward + (1 - ReinforcementLearning.alpha) * qValue$     
+    \EndIf     
+    \State qTable.update(action + "\#" + testScenario, qValue)    
+  \end{algorithmic}
+\end{algorithm}
+
+ 
+ 
+Unlike in the traditional approach, updating of the Q values for each action also occurs in the exploitation phase. The exploration phase ends when no value of Q equals zero. Table \ref{pab:mdp} presents hypothetical Q values for a test. In Table \ref{pab:mdp}, it can be observed that the algorithm in the Service Level state are in the exploitation phase because there is no other value of Q that is equal to zero. 
+
+% Please add the following required packages to your document preamble:
+% \usepackage[table,xcdraw]{xcolor}
+% If you use beamer only pass "xcolor=table" option, i.e. \documentclass[xcolor=table]{beamer}
+\begin{table}[h]
+\centering
+\caption{Hypothetical MDP Q values }
+\label{pab:mdp}
+\begin{tabular}{lll}
+\rowcolor[HTML]{C0C0C0} 
+\textbf{Above Service Level}  & \textbf{Scenario 1} & \textbf{Scenario 2} \\
+Increment Users               & 0.2                 & 0.0                 \\
+Reduce Users                  & 0.1                 & 0.2                 \\
+Phase                         & Exploration         & Exploration         \\
+\rowcolor[HTML]{C0C0C0} 
+\textbf{Service Level}        & \textbf{Scenario 1} & \textbf{Scenario 2} \\
+Increment Users               & 0.2                 & 0.11                \\
+Reduce Users                  & 0.1                 & -0.2                \\
+\rowcolor[HTML]{F8FF00} 
+Phase                         & Exploitation         & Exploitation         \\
+\rowcolor[HTML]{C0C0C0} 
+\textbf{Below Service Level} & \textbf{Scenario 1} & \textbf{Scenario 2} \\
+Increment Users               & 0.0                 & 0.2                 \\
+Reduce Users                  & 0.1                 & 0.0                 \\
+Phase                         & Exploration         & Exploration        
+\end{tabular}
+\end{table}
+
+\subsection{Exploitation phase}
+
+The main objective of the exploitation phase is to choose the best neighboring solution on the basis of the Q value. The research expected that Q-learning improves the hybrid algorithm proposed by Gois et al. by replacing the random characteristic of the TS, SA, and GA operators with the direction given by the Q-learning technique in the exploration phase. Algorithm \ref{hybridqexploitation} presents the main steps of the exploitation phase. In the first line, the algorithm gets the original encoded solution. In lines 2 to 11, HybridQ gets the maximum, the second maximum, or the third maximum \textit{q} value, depending on the random value of the random variable. The algorithm chooses one of the three largest values of q. The variation of the highest values was inserted in the algorithm to escape the local optima. In line 12, the algorithm gets the key value in the table that has the maximum \textit{q} value. In line 13, the key is separated into two parts using the \# delimiter. The first part of the key is the action, and the second part is the test scenario. If the action is equal to the '\textit{up}' value, the number of encoded solution users is incremented. If the action is equal to the '\textit{down}' value, the number of encoded solution users is decremented. Finally, the test scenario is changed and the new encoded solution is returned.
+
+
+
+
+\begin{algorithm}[h]
+  \caption{HybridQ exploitation phase }\label{hybridqexploitation}
+  \begin{algorithmic}[1]    
+    \State $Gene[] encoded solution \gets service.getTestencoded solution()$
+    \State $random \gets Random.nextInt(3)$
+    \If {random==1}     
+    \State $qMaxValue \gets qTable.getMaxValue(responseTime)$
+    \EndIf
+    \If {random==2}     
+    \State $qMaxValue \gets qTable.getSecondMaxValue(responseTime)$
+    \EndIf
+    \If {random==3}     
+    \State $qMaxValue \gets qTable.getThirdMaxValue(responseTime)$
+    \EndIf
+    \State $key \gets qTable.selectKey(qMaxValue)$
+    \State $String[]\  keySplit \gets key.split('\#')$ 
+    \State $action \gets keySplit[0]$
+    \State $testScenario \gets keySplit[1]$   
+    \If {action=='up'}
+    \State $ increaseUsers(encoded solution) $
+    \EndIf
+    \If {action=='down'}
+    \State $ decreaseUsers(encoded solution) $
+    \EndIf    
+    \State $encoded solutionPosition \gets Random.nextInt(encoded solution.length)$
+    \State changeTestScenario(encoded solution,testScenario,encoded solutionPosition)
+  \end{algorithmic}
+\end{algorithm}
+
+\subsection{Integration between metaheuristics and the Q-learning algorithm }
+
+The Q-learning algorithm is used by TS or SA algorithm to obtain the neighbors and in the mutation operation of the GA. Unlike in the traditional processes of obtaining neighboring solutions such as random change and permutation, the decision to change a encoded solution gene is made from the action that has the highest value of Q. Fig. \ref{fig:neighservice} shows how one of the neighbors of a test is generated using Q-learning in IAdapter. The solution uses a service called Q-Neighborhood Service to generate the neighbor from the action that has the highest value of Q.
+
+
+\section{Experiment}
+
+We conducted one experiment to verify the effectiveness of the HybridQ algorithm. The iterated racing procedure (irace) was applied as an automatic algorithm configuration tool for tuning the metaheuristics parameters. Iterated racing is a generalization of the iterated F-race procedure to automate the arduous task of configuring the parameters of an optimization algorithm \cite{ManuelLopez-IbanezJeremieDubois-LacosteLesliePerezCaceresMauroBirattari2016}. The best parameters obtained from irace were a population size of five individuals, a crossover value of 0.7551, a mutation value of 0.7947, an elitism value of 0.5356, and a maximum number of iterations of 16. The experiment ran for 16 generations in a docker environment on a server with 16 GB of memory and 500 GB of hard disk space. The experiment used an initial population of five individuals by metaheuristics. The GA used the top four individuals from each generation in the crossover operation. The tabu list was configured with a size of 10 individuals and expired every two generations.  The mutation operation was applied to 79\% of the population on each generation. The experiments used TS, GAs, SA, the hybrid metaheuristic approach proposed by Gois et al. \citep{Gois2016}, and the HybridQ approach. 
+
+
+The objective function applied was intended to maximize the response time of the scenarios being tested.  In the experiment, better fitness values coincided with finding scenarios with higher values of the response time. A penalty was applied when the response time was greater than the  maximum response time expected. The experiment used the following fitness (goal) function:
+
+\begin{equation}
+\begin{aligned}
+fitness=
+20* 90percentiletime\\
+20*80percentiletime\\
+20*70percentiletime\\
+20*maxResponseTime\\
+-penalty
+\end{aligned}
+\end{equation}
+
+For the experiment, an objective function with a single factor was chosen since users and response time are conflicting factors. All tests in the experiment were conducted without the need of a tester by automating the process of executing and designing the performance test scenarios.    
+
+\subsection{Experiment research questions}
+
+The following research question is addressed:
+
+\begin{itemize}
+\item Does the Q-learning technique improve the choice of neighboring solutions, which can thus improve the number of requests and the time needed to find scenarios with the longest response time in the application under test?
+\end{itemize}
+
+\subsection{Variables}
+
+The independent variable was the algorithms used in each experiment. The dependent variables were the optimal solution found by each algorithm, the number of requests to find the optimal solution, and the time of execution needed by each algorithm.
+
+\subsection{Hypotheses}
+
+\begin{itemize}
+\item With regard to the optimal solution found by each algorithm:
+\begin{itemize}
+\item $H1_{0}$ (null hypothesis) : The HybridQ algorithm did not find the best solution compared to the other metaheuristic approaches.
+\item $H1_{1}$  : The HybridQ algorithm found the best solution compared to the other metaheuristic approaches.
+\end{itemize}
+\end{itemize}
+
+
+\begin{itemize}
+\item With regard to the number of requests needed to find the optimal solution of each algorithm:
+\begin{itemize}
+\item $H2_{0}$ (null hypothesis) : The HybridQ algorithm realizes more requests than the other algorithms in the experiments performed.
+\item $H2_{1}$  : The HybridQ algorithm does not realize more requests than the other algorithms in the executed experiments. 
+\end{itemize}
+\end{itemize}
+
+
+\begin{itemize}
+\item With regard to the time consumed to find the optimal solution of each algorithm:
+\begin{itemize}
+\item $H3_{0}$ (null hypothesis) :  The HybridQ algorithm does not converge faster or in same time than the other algorithms in the experiments performed. 
+\item $H3_{1}$: The HybridQ algorithm converge faster or in same time than the other algorithms in the experiments performed. 
+\end{itemize}
+\end{itemize}
+
+\subsection{Experiment phases}
+
+The experiment was conducted in two phases. The first phase verified the number of requisitions and the time required for the HybridQ exploration phase. The second phase ran the stress test using GA, TS, SA, the hybrid approach by Gois et al., and the HybridQ algorithm simultaneously.
+
+\subsection{OpenCart Experiment}
+
+The experiment was conducted to test the use of the HybridQ algorithm in a real implemented application.  The chosen application was the OpenCart application, available at \url{opencart.com}. OpenCart is a free open-source ecommerce platform for online merchants. OpenCart works with PHP 5 and MySQL. The maximum tolerated response time in the test was 5 s. The whole process of stress and performance tests, which ran for 2 days and  with about 1500 executions, was carried out without the need for monitoring by a test designer. The tool automatically selected the next scenarios to be run up to the limit of 11 generations previously established. 
+
+The experiment used the following application features:
+
+\begin{itemize}
+\item Main Page: The main page of the application.
+\item Search Item: The application searches for a product.
+\item Product Detail: The application shows  the details about one product.
+\item Add to Cart: The application adds a product to the shopping cart.
+\item View Cart: The application displays the shopping cart.
+\item Remove Item: The application removes an item from the shopping cart. 
+\end{itemize}
+
+\subsubsection{Q-learning training phase}
+
+The application was submitted to 1 h of training with the  Q-learning algorithm using all test scenarios;  Table \ref{tab:opencartlearning1} shows the values of \textit{q}  obtained for response times lower than the service level. The action and state with the best q value were the increment in the number of users ('up') in the Add-to-Cart feature. The learning phase required 1431 requisitions for the application under test. 
+
+
+% Please add the following required packages to your document preamble:
+% \usepackage[table,xcdraw]{xcolor}
+% If you use beamer only pass "xcolor=table" option, i.e. \documentclass[xcolor=table]{beamer}
+\begin{table}[]
+\centering
+\caption{Q values for the response times that were lower than the service level}
+\label{tab:opencartlearning1}
+\begin{tabular}{|l|l|l|l|l|l|}
+\hline
+\rowcolor[HTML]{EFEFEF} 
+\textbf{Action} & \textbf{Feature} & \textbf{Q value} & \textbf{State}                      & \textbf{Feature}                             & \textbf{Q value}                          \\ \hline
+up              & Main Page        & -0.0405763        & \cellcolor[HTML]{EFEFEF}\textbf{up} & \cellcolor[HTML]{EFEFEF}\textbf{Add to Cart} & \cellcolor[HTML]{EFEFEF}\textbf{0.0390237} \\ \hline
+down            & Main Page        & 0.00079202        & down                                & Add to Cart                                  & -0.00079202                                \\ \hline
+same            & Main Page        & -0.0398           & same                                & Add to Cart                                  & -0.0398                                    \\ \hline
+up              & Search Page      & -0.00079202       & up                                  & View Cart                                    & -0.0398                                    \\ \hline
+down            & Search Page      & -0.0398           & down                                & View Cart                                    & -0.0398                                    \\ \hline
+same            & Search Page      & -0.0398           & same                                & View Cart                                    & -0.0398                                    \\ \hline
+up              & Product Details   & -0.00079202       & up                                  & Remove Item                                  & -0.0398                                    \\ \hline
+down            & Product Details   & -0.00079202       & down                                & Remove Item                                  & -0.0398                                    \\ \hline
+same            & Product Details   & -0.0398           & same                                & Remove Item                                  & -0.0398                                    \\ \hline
+\end{tabular}
+\end{table}
+
+\subsubsection{Results}
+
+Figure \ref{fig:experiment1} presents the number of requests by the maximum fitness value. The HybridQ algorithm obtained the maximum fitness value : 364,860 ($H1_{1}$ hypothesis). It obtained a solution with a greater fitness value, but needed a much greater number of requests compared to the other algorithms, not contemplating hypothesis $H2_{1}$. GA was the algorithm that obtained the best fitness value with a minor number of requests ($H2_{0}$ hypothesis). All algorithms consumed the same amount of time for the test (6 h) ($H3_{1}$ hypothesis). The scenario with the highest fitness value had 4.8 s of response time and 38 users:
+
+\begin{itemize}
+\item 25 users on the Search page;
+\item 10 users on the Add to Cart feature;
+\item 2 users removing items from the cart;
+\item 1 user on the Main Page. 
+\end{itemize}
+
+The t-test and Wilcoxon rank sum test were applied using the R language. The test results showed that the HybridQ algorithm and the hybrid algorithm proposed by Gois et al. were superior to GA, TS, and SA, with p < 0.02. The t-test showed that the mean of the HybridQ fitness value was superior to that of the hybrid algorithm proposed by Gois et al.
+
+\begin{lstlisting}
+	Welch Two-Sample t-test
+
+data:  b\$MAXFIT and c\$MAXFIT
+t = 13.829, df = 31678, p-value < 2.2e-16
+alternative hypothesis: true difference in means is not equal to 0
+95 percent confidence interval:
+ 7506.846 9986.226
+sample estimates:
+mean of x mean of y 
+ 332007.5  313260.9 
+
+\end{lstlisting}
+
+
+
+\subsection{Threats to validity}
+
+As a typical search strategy, it is also difficult to ensure that the execution times generated in the experiment represent the global optimum. In this work, we just evaluated the use of a single-objective algorithm. However, several multi-objective algorithms could be applied.  An experiment was performed with the configuration obtained by the irace algorithm; however, new experiments are required to verify the sensitivity of the results. It is necessary to compare the current approach with the CP approaches presented in the state of art.
+
+
+
+\section{Conclusion}
+
+The present study extends the article ``Improving stress search based testing using a hybrid metaheuristic approach'' to ascertain if the use of the Q-learning technique allows meta-heuristic algorithms to improve the search for application failures. One experiment was conducted to validate the proposed approach. The experiment used GAs, TS, SA, the hybrid approach proposed by Gois et al. \citep{Gois2016}, and the HybridQ algorithm. The experiment ran for 17 generations. The experiment used an initial population of five individuals by metaheuristics. All tests in the experiment were conducted without the need of a tester by automating the execution of the stress tests with the JMeter tool.  HybridQ found the individuals with the greatest response time. The scenario with the greatest fitness value had 38 users on the Search Page, Add to Cart, Remove Item, and Main Page features. GA was the algorithm that obtained the best fitness value with a minor number of requests. All algorithms consume the same time of test (6 hours). The results obtained can improve the decision-making process related to the service level definition for the application under test. In the experiment, the application supported only 38 users for the service level of 5 seconds. There is a range of future improvements in the proposed approach:
+
+\begin{itemize}
+\item More experimentation is also required to verify sensitivity of the results to  hybrid metaheuristic configuration. 
+\item The fitness approach of the Gois et al. solution is based on two conflicting measures: number of users and execution time. A multi-objective algorithm should be more adequate. 
+\item It is necessary to compare the current approach with the constraint programming (CP) approaches presented in the state of art.
+
+\end{itemize}
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%                                          %%
+%% Backmatter begins here                   %%
+%%                                          %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{backmatter}
+
+\section*{Competing interests}
+  The authors declare that they have no competing interests.
+  
+\section*{List of abbreviations}
+HybridQ – Hybrid Algorithm with Q-Learning \\
+SBST – Search-Based Test
+
+\section*{Ethics approval and consent to participate}
+Not applicable
+
+\section*{Consent for publication}
+All authors consent to the publication of the research
+
+\section*{Availability of data and materials}
+The source code for the tool is available at github.com/naubergois/newiadapter
+
+\section*{Funding}
+Not applicable
+
+\section*{Author's contributions}
+All the authors contributed in the writing, research, and formulation of the paper
+
+\section*{Endnotes}  
+Not applicable  
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%                  The Bibliography                       %%
+%%                                                         %%
+%%  Bmc_mathpys.bst  will be used to                       %%
+%%  create a .BBL file for submission.                     %%
+%%  After submission of the .TEX file,                     %%
+%%  you will be prompted to submit your .BBL file.         %%
+%%                                                         %%
+%%                                                         %%
+%%  Note that the displayed Bibliography will not          %%
+%%  necessarily be rendered by Latex exactly as specified  %%
+%%  in the online Instructions for Authors.                %%
+%%                                                         %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% if your bibliography is in bibtex format, use those commands:
+%\bibliographystyle{splncs03}
+\bibliographystyle{spbasic}
+%\bibliographystyle{bmc-mathphys} % Style BST file (bmc-mathphys, vancouver, spbasic).
+\bibliography{biblio}      % Bibliography file (usually '*.bib' )
+% for author-year bibliography (bmc-mathphys or spbasic)
+% a) write to bib file (bmc-mathphys only)
+% @settings{label, options="nameyear"}
+% b) uncomment next line
+%\nocite{label}
+
+% or include bibliography directly:
+% \begin{thebibliography}
+% \bibitem{b1}
+% \end{thebibliography}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%                               %%
+%% Figures                       %%
+%%                               %%
+%% NB: this is for captions and  %%
+%% Titles. All graphics must be  %%
+%% submitted separately and NOT  %%
+%% included in the Tex document  %%
+%%                               %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%
+%% Do not use \listoffigures as most will included as separate files
+\section*{Figures}
+
+
+\begin{figure}
+\centering
+\includegraphics{./images/qalgo.png}
+\caption{The Q-learning algorithm}
+\label{fig:qalgo}
+\end{figure}
+
+
+\begin{figure}[h]
+\begin{minipage}{.5\textwidth}
+\centering
+\includegraphics{./images/independ.png}
+\caption{Use of the algorithms independently \citep{Gois2016}}
+\label{fig:firstaproach}
+\end{minipage}
+\begin{minipage}{.5\textwidth}
+\centering
+\includegraphics{./images/collaborative.png}
+\caption{Use of the  algorithms collaboratively \citep{Gois2016}}
+\label{fig:secondapproach}
+\end{minipage}
+\end{figure}
+
+
+\begin{figure}[h]
+\centering
+\includegraphics{./images/encoded solutionre.png}
+\caption{Solution representation, crossover,  and neighborhood operators \citep{Gois2016}}
+\label{fig:solution}
+\end{figure}
+
+\begin{figure}[h!]
+\begin{minipage}{.5\textwidth}
+\center
+\includegraphics{./images/mdp3.png}
+\caption{Markov Decision Process used by HybridQ}
+\label{fig:mdphybridq}
+\end{minipage}
+\begin{minipage}{.5\textwidth}
+\center
+\includegraphics{./images/q-neighborservice.png}
+\caption{HybridQ NeighborHood Service}
+\label{fig:neighservice}
+\end{minipage}
+\end{figure}
+
+\begin{figure}[h]
+\centering
+\includegraphics{./images/experiment1.png}
+\caption{Maximum fitness value by number of requests}
+\label{fig:experiment1}
+\end{figure}
+
+
+
+
+\end{backmatter}
+\end{document}
+
+
