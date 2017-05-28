@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.3.13)  20 MAY 2017 02:53
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.3.13)  23 MAY 2017 09:31
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1835,15 +1835,14 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 LaTeX Warning: No positions in optional float specifier.
                Default added (so using `tbp') on input line 749.
 
-
+[14]
 Overfull \hbox (15.40363pt too wide) in paragraph at lines 787--788
 [][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
-[14]
 LaTeX Font Info:    Font shape `T1/txss/bx/n' will be
 (Font)              scaled to size 6.64998pt on input line 826.
- [15] (/Users/naubergois/Downloads/bmc_template copy/.texpadtmp/main.bbl
+[15] (/Users/naubergois/Downloads/bmc_template copy/.texpadtmp/main.bbl
 [16])
 Overfull \hbox (12.5pt too wide) in paragraph at lines 900--900
 [] [] 
@@ -1875,11 +1874,11 @@ LaTeX Warning: There were multiply-defined labels.
 Here is how much of TeX's memory you used:
  27293 strings out of 493089
  499700 string characters out of 6134842
- 819553 words of memory out of 5000000
+ 819554 words of memory out of 5000000
  30134 multiletter control sequences out of 15000+600000
  101977 words of font info for 175 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 103i,20n,103p,10406b,1703s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 103i,20n,103p,10406b,1697s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
 exlive/2015/texmf-dist/fonts/type1/public/txfonts/rtcxr.pfb></usr/local/texlive
 /2015/texmf-dist/fonts/type1/public/txfonts/rtxmi.pfb></usr/local/texlive/2015/
@@ -1895,7 +1894,7 @@ al/texlive/2015/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive
 /2015/texmf-dist/fonts/type1/urw/times/utmri8a.pfb></usr/local/texlive/2015/tex
 mf-dist/fonts/type1/urw/zapfding/uzdr.pfb>
 Output written on "/Users/naubergois/Downloads/bmc_template copy/.texpadtmp/mai
-n.pdf" (18 pages, 149475 bytes).
+n.pdf" (18 pages, 149551 bytes).
 PDF statistics:
  127 PDF objects out of 1000 (max. 8388607)
  87 compressed objects within 1 object stream
